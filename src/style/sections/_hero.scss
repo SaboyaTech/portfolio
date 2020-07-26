@@ -1,14 +1,21 @@
+#filter {
+	background: url('/src/assets/hero-section/img1.jpg');
+	background-position-x: center;
+	background-size: cover;
+}
+
 #hero {
-	// min-height: 100vh;
+	background-color: rgba(0, 0, 0, 0.6);
+	min-height: 100vh;
 	height: 100vh;
 	width: 100%;
-	// display: flex;
-	// align-items: center;
+	display: flex;
+	align-items: center;
 	border-bottom: 0px;
 	// background: $white-color;
 	font-weight: 400;
-	color: $dark-blue-text;
-	// padding: 0rem 5.6rem;
+	color: $white-color;
+	padding: 0rem 5.6rem;
 	margin-bottom: 0;
 	top: 0;
 	left: 0;
@@ -18,25 +25,30 @@
 
 	// If you want to set a background image on the hero section, uncomment these with yout custom image
 
-	background: url('/src/assets/los_angeles.jpg');
-	background-position: center;
-	background-size: cover;
+	// background: url('/src/assets/hero-section/img1.jpg');
+	// background-position-x: center;
+	// background-size: cover;
 
-	#filter {
-		display: flex;
-		align-items: center;
-		width: 100vw;
+	@include respond(phone) {
+		padding: 0rem $default-font-size;
+	}
+
+	#container-filter {
 		height: 100vh;
-		background-color: rgba(255, 255, 255, 0.1);
-		padding: 0rem 5.6rem;
-		margin-bottom: 0;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		right: 0;
+		width: 100vw;
+	}
+
+	// #container-sub {
+	// 	margin-bottom: 24rem;
+	// }
+
+	#flex-container {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
 
 		@include respond(phone) {
-			padding: 0rem $default-font-size;
+			// align-items: center;
 		}
 	}
 
@@ -45,21 +57,30 @@
 		font-weight: 700;
 		margin-bottom: 3.2rem;
 		text-align: left;
-		// text-shadow: 0.5rem 0.5rem 1rem #eee;
 
 		@include respond(tab-land) {
+			text-align: center;
 			font-size: 4rem;
 		}
 		@include respond(tab-port) {
 			font-size: 3.6rem;
-			text-align: center;
 		}
 		@include respond(phone) {
-			font-size: 2rem;
+			font-size: 2.1rem;
 			line-height: 1.5;
 		}
 		@include respond(phone-xs) {
-			font-size: 2.8rem;
+			font-size: 1.5rem;
+		}
+	}
+
+	#typewriter {
+		text-align: left;
+
+		@include respond(phone) {
+			text-align: center;
+			margin-bottom: 19rem;
+			margin-top: 5rem;
 		}
 	}
 
@@ -77,10 +98,5 @@
 				font-size: 2rem;
 			}
 		}
-	}
-
-	#typewriter-section {
-		display: flex;
-		color: $light;
 	}
 }

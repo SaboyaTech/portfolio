@@ -8,9 +8,13 @@ h1 {
 	margin-bottom: 2rem;
 
 	#typewriter {
-		font-weight: 600;
+		font-weight: 500;
 		font-size: 1.9rem;
-		text-align: left;
+
+		@include respond(phone) {
+			font-weight: 400;
+			font-size: 1.5rem;
+		}
 	}
 }
 

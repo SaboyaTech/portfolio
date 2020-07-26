@@ -1,4 +1,4 @@
-const parallax = document.getElementById('hero');
+const parallax = document.getElementById('filter');
 
 window.addEventListener('scroll', () => {
 	const offset = window.pageYOffset;
