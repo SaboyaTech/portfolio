@@ -16,7 +16,7 @@ typewriter1
 	.pauseFor(1000)
 	.deleteAll()
 	.pauseFor(500)
-	.typeString(`I'm passionate about all aspects of tech.`)
+	.typeString(`I'm passionate about all aspects of tech`)
 	.pauseFor(1000)
 	.deleteAll()
 	.pauseFor(1000);
