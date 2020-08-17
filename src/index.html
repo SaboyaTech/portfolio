@@ -28,9 +28,10 @@
 		<div id="filter">
 			<div id="hero">
 				<div class="container">
-					<h1 class="hero-title load-hidden">
-						Hi! I'm Jose L Saboya
+					<h1 class="hero-title">
+						Hi<span>!</span> I'm <span>Jose L Saboya</span>
 					</h1>
+					<p id="sub-hero-title">Your Next Hiree...</p>
 					<div id="typewriter-section">
 						<h2 id="typewriter-1"></h2>
 					</div>
@@ -58,14 +59,14 @@
 					<div class="col-md-6 col-sm-12">
 						<div class="about-wrapper__info">
 							<p class="about-wrapper__info-text">
-								I’m a highly motivated, self-driven, detail oriented, and a very
-								curious individual. I attended Rutgers Full Stack Coding
-								Bootcamp, a 6 month program, because I decided it was time for a
-								career change and to go follow an old dream.
+								I’m a highly motivated, self-driven, passionate, and a very
+								curious individual who has always been curious about tech.
+								I decided it was time for a career change from workign EMS for 6 years
+								to go work in tech and follow an old dream.
+								That is why I attended Rutgers Full Stack Coding Bootcamp for 6 months.
 							</p>
 							<p class="about-wrapper__info-text">
-								I've been working as an EMT in the state of New Jersey for the last 6 years.
-								I love healping people but I've decided to improve and impact people's lifes
+								I love helping people but I want to be an impact in people's lifes
 								through another passion of mine.
 								I want to be able to provide creative solutions to real world problems utilizing
 								the power of technology.
@@ -147,18 +148,28 @@
 						<div class="col-lg-4 col-sm-12">
 							<div class="project-wrapper__text">
 								<h3 class="project-wrapper__text-title">
-									Face Recognition React App
+									Face-Rec
 								</h3>
 								<div class="project-description">
 									<p class="mb-4">
-										A mobile-first responsive build with a space theme.
-										This site was built utilizing:
+										A Facial Recognition app built on React.js
+										that uses Clarifai API to detect a face on a photo.
+										A user can sign-up or login securely, and the system
+										will keep track of how many scans the user has.
+									</p>
+									<p>
+										The backend was built on Node.js with an Express server
+										the connected to a MySQL database. For security BCrypt
+										was implemented, this took care of the password-hashing.
 									</p>
 									<ul class="grid-container pink">
-										<li>HTML5</li>
+										<li>Reat</li>
 										<li>SCSS</li>
-										<li>CSS Grid</li>
-										<li>CSS Flexbox</li>
+										<li>RestAPI</li>
+										<li>Node</li>
+										<li>Express</li>
+										<li>BCrypt</li>
+										<li>Mysql</li>
 									</ul>
 								</div>
 								<a target="_blank" class="cta-btn cta-btn--hero" href="https://face-recognition-react-app.netlify.app/">
@@ -187,21 +198,18 @@
 						<div class="col-lg-4 col-sm-12">
 							<div class="project-wrapper__text">
 								<h3 class="project-wrapper__text-title">
-									React E-commerce Store
+									CRWN Store
 								</h3>
 								<div class="project-description">
 									<p class="mb-4">
-										Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-										Excepturi neque, ipsa animi maiores repellendus distinctio
-										aperiam earum dolor voluptatum consequatur blanditiis
-										inventore debitis fuga numquam voluptate ex architecto
-										itaque molestiae.
+										A fictitious e-Commerce store built on the Mearn Stack.
 									</p>
 									<ul class="grid-container black">
-										<li>HTML5</li>
+										<li>React</li>
 										<li>SCSS</li>
-										<li>CSS Grid</li>
-										<li>CSS Flexbox</li>
+										<li>Node</li>
+										<li>Express</li>
+										<li>MangoDB</li>
 									</ul>
 								</div>
 								<a target="_blank" class="cta-btn cta-btn--hero" href="#!">
@@ -231,17 +239,17 @@
 								<h3 class="project-wrapper__text-title">Secure Fox</h3>
 								<div class="project-description">
 									<p class="mb-4">
-										Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-										Excepturi neque, ipsa animi maiores repellendus distinctio
-										aperiam earum dolor voluptatum consequatur blanditiis
-										inventore debitis fuga numquam voluptate ex architecto
-										itaque molestiae.
+										A digital jounal
 									</p>
 									<ul class="grid-container gold">
 										<li>HTML5</li>
-										<li>SCSS</li>
-										<li>CSS Grid</li>
-										<li>CSS Flexbox</li>
+										<li>CSS3</li>
+										<li>Javascript</li>
+										<li>Flexbox</li>
+										<li>Node</li>
+										<li>Express</li>
+										<li>Sequalize</li>
+										<li>MySQL</li>
 									</ul>
 								</div>
 								<a target="_blank" class="cta-btn cta-btn--hero" href="https://secure-fox.herokuapp.com/">
@@ -268,20 +276,25 @@
 					<div class="row">
 						<div class="col-lg-4 col-sm-12">
 							<div class="project-wrapper__text">
-								<h3 class="project-wrapper__text-title">Drone JS</h3>
+								<h3 class="project-wrapper__text-title">Take Flight</h3>
 								<div class="project-description">
 									<p class="mb-4">
-										Control your drone seamlessly with our custom designed
-										controller. Track and store all of the data from each and
-										every flight. Display your data in easy to view charts and
-										graphs. Experience the future of drone technology with Take
-										Flight!
+										A React.js Drone application that uses a Node.js backend to
+										communicate with the DJI Tello Drone via UDP4 sockets,
+										and to communicate to and from the browser Socket.io was implemented.
+										Data sent back from the drone was used to display it's current position
+										in a gyroscope ui, the drone's battery level.
+										Flight data was recorded into a MySql database.
 									</p>
 									<ul class="grid-container light-blue">
-										<li>HTML5</li>
-										<li>SCSS</li>
-										<li>CSS Grid</li>
-										<li>CSS Flexbox</li>
+										<li>React</li>
+										<li>CSS3</li>
+										<li>Node</li>
+										<li>Next.js</li>
+										<li>UDP4</li>
+										<li>Socket.io</li>
+										<li>MySql</li>
+										<li>Sequalize</li>
 									</ul>
 								</div>
 								<a target="_blank" class="cta-btn cta-btn--hero" href="https://ancient-eyrie-50147.herokuapp.com/">

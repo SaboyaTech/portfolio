@@ -33,16 +33,16 @@ export default function () {
 		)
 	);
 
-	// ScrollReveal().reveal(
-	// 	'.hero-title-2',
-	// 	assignProps(
-	// 		{
-	// 			delay: 750,
-	// 			origin: window.innerWidth > 768 ? 'left' : 'bottom',
-	// 		},
-	// 		defaultProps
-	// 	)
-	// );
+	ScrollReveal().reveal(
+		'#sub-hero-title',
+		assignProps(
+			{
+				delay: 725,
+				origin: window.innerWidth > 768 ? 'left' : 'bottom',
+			},
+			defaultProps
+		)
+	);
 
 	ScrollReveal().reveal(
 		'#typewriter-1',
