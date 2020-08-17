@@ -24,27 +24,18 @@
 	</head>
 
 	<body>
-		<!-- <div id="top"></div> -->
-
+		<!-- **** Hero Section **** -->
 		<div id="filter">
-			<!-- **** Hero Section **** -->
 			<div id="hero">
 				<div class="container">
-					<div id="flex-container">
-						<h1 class="hero-title load-hidden">
-							> console.log ('Hello World!')
-						</h1>
-						<h1 class="hero-title-2">
-							My name is
-							<span>Jose Saboya</span>
-						</h1>
-					</div>
+					<h1 class="hero-title load-hidden">
+						Hi! I'm Jose L Saboya
+					</h1>
 					<div id="typewriter-section">
-						<h2 id="typewriter"></h2>
+						<h2 id="typewriter-1"></h2>
 					</div>
-
 					<p class="hero-cta" class="load-hidden">
-						<a class="cta-btn cta-btn--resume" href="#about">Know more</a>
+						<a class="btn btn--peach btn--animated" href="#about">Know more</a>
 					</p>
 				</div>
 			</div>
@@ -80,11 +71,21 @@
 								the power of technology.
 							</p>
 
-							<span class="d-flex mt-3">
-								<a target="_blank" class="cta-btn cta-btn--resume" href="#!">
-									View Resume
+							<div id="about-me" class="social-links ">
+								<a href="https://twitter.com/saboya_dev" target="_blank">
+									<i class="fa fa-twitter fa-inverse"></i>
 								</a>
-							</span>
+								<a href="https://www.instagram.com/saboya_dev/" target="_blank">
+									<i class="fa fa-instagram fa-inverse"></i>
+								</a>
+								<a href="https://linkedin.com/in/joseluissaboya" target="_blank">
+									<i class="fa fa-linkedin fa-inverse"></i>
+								</a>
+								<a href="https://github.com/SaboyaDev" target="_blank">
+									<i class="fa fa-github fa-inverse"></i>
+								</a>
+							</div>
+
 						</div>
 					</div>
 				</div>
@@ -96,28 +97,27 @@
 		<section id="projects">
 			<div class="container">
 				<div class="project-wrapper">
-					<h2 class="section-title dark-blue-text">
+					<h2 class="section-title dark-text">
 						Projects
 					</h2>
-
-					<!-- Each .row is a project -->
+					<!-- Cosmo Junkie Each .row is a project -->
 					<div class="row">
-						<div class="col-lg-4 col-sm-12">
+						<div class="col-lg-4 col-sm-12 main-wrapper">
 							<div class="project-wrapper__text">
 								<h3 class="project-wrapper__text-title">
 									Cosmo Junkie
 								</h3>
-								<div>
+								<div class="project-description">
 									<p class="mb-4">
 										A mobile-first responsive build with a space theme.
 										This site was built utilizing:
-									<ul>
+									</p>
+									<ul class="grid-container dark-purple">
 										<li>HTML5</li>
 										<li>SCSS</li>
 										<li>CSS Grid</li>
 										<li>CSS Flexbox</li>
 									</ul>
-									</p>
 								</div>
 								<a target="_blank" class="cta-btn cta-btn--hero"
 									href="https://saboyadev.github.io/Mobile-First-Responsive-Cosmo-Junkie/">
@@ -129,25 +129,67 @@
 								</a>
 							</div>
 						</div>
+
 						<div class="col-lg-8 col-sm-12">
 							<div class="project-wrapper__image">
-								<a href="#!" target="_blank">
+								<a href="https://saboyadev.github.io/Mobile-First-Responsive-Cosmo-Junkie/" target="_blank">
 									<div data-tilt class="thumbnail rounded">
-										<img class="img-fluid" src="./assets/gif/CosmoJunkie.gif" />
+										<img class="img-fluid" src="./assets/cosmoJunkie.png" />
 									</div>
 								</a>
 							</div>
 						</div>
 					</div>
 					<!-- /END Project -->
-					<!-- Each .row is a project -->
+
+					<!-- Face Recognition App Each .row is a project -->
+					<div class="row">
+						<div class="col-lg-4 col-sm-12">
+							<div class="project-wrapper__text">
+								<h3 class="project-wrapper__text-title">
+									Face Recognition React App
+								</h3>
+								<div class="project-description">
+									<p class="mb-4">
+										A mobile-first responsive build with a space theme.
+										This site was built utilizing:
+									</p>
+									<ul class="grid-container pink">
+										<li>HTML5</li>
+										<li>SCSS</li>
+										<li>CSS Grid</li>
+										<li>CSS Flexbox</li>
+									</ul>
+								</div>
+								<a target="_blank" class="cta-btn cta-btn--hero" href="https://face-recognition-react-app.netlify.app/">
+									See Live
+								</a>
+								<a target="_blank" class="cta-btn text-color-main"
+									href="https://github.com/SaboyaDev/Zero-Ro-Mastery-Face-Recognition-Brain">
+									Source Code
+								</a>
+							</div>
+						</div>
+						<div class="col-lg-8 col-sm-12">
+							<div class="project-wrapper__image">
+								<a href="#!" target="_blank">
+									<div data-tilt class="thumbnail rounded">
+										<img class="img-fluid" src="./assets/face-recognition.png" />
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- /END Project -->
+
+					<!-- React E-Commerce Store Each .row is a project -->
 					<div class="row">
 						<div class="col-lg-4 col-sm-12">
 							<div class="project-wrapper__text">
 								<h3 class="project-wrapper__text-title">
 									React E-commerce Store
 								</h3>
-								<div>
+								<div class="project-description">
 									<p class="mb-4">
 										Lorem ipsum dolor sit, amet consectetur adipisicing elit.
 										Excepturi neque, ipsa animi maiores repellendus distinctio
@@ -155,6 +197,12 @@
 										inventore debitis fuga numquam voluptate ex architecto
 										itaque molestiae.
 									</p>
+									<ul class="grid-container black">
+										<li>HTML5</li>
+										<li>SCSS</li>
+										<li>CSS Grid</li>
+										<li>CSS Flexbox</li>
+									</ul>
 								</div>
 								<a target="_blank" class="cta-btn cta-btn--hero" href="#!">
 									See Live
@@ -176,12 +224,12 @@
 					</div>
 					<!-- /END Project -->
 
-					<!-- Each .row is a project -->
+					<!-- Secure Fox Each .row is a project -->
 					<div class="row">
 						<div class="col-lg-4 col-sm-12">
 							<div class="project-wrapper__text">
 								<h3 class="project-wrapper__text-title">Secure Fox</h3>
-								<div>
+								<div class="project-description">
 									<p class="mb-4">
 										Lorem ipsum dolor sit, amet consectetur adipisicing elit.
 										Excepturi neque, ipsa animi maiores repellendus distinctio
@@ -189,6 +237,12 @@
 										inventore debitis fuga numquam voluptate ex architecto
 										itaque molestiae.
 									</p>
+									<ul class="grid-container gold">
+										<li>HTML5</li>
+										<li>SCSS</li>
+										<li>CSS Grid</li>
+										<li>CSS Flexbox</li>
+									</ul>
 								</div>
 								<a target="_blank" class="cta-btn cta-btn--hero" href="https://secure-fox.herokuapp.com/">
 									See Live
@@ -210,12 +264,12 @@
 					</div>
 					<!-- /END Project -->
 
-					<!-- Each .row is a project -->
+					<!-- Drone JS Each .row is a project -->
 					<div class="row">
 						<div class="col-lg-4 col-sm-12">
 							<div class="project-wrapper__text">
 								<h3 class="project-wrapper__text-title">Drone JS</h3>
-								<div>
+								<div class="project-description">
 									<p class="mb-4">
 										Control your drone seamlessly with our custom designed
 										controller. Track and store all of the data from each and
@@ -223,6 +277,12 @@
 										graphs. Experience the future of drone technology with Take
 										Flight!
 									</p>
+									<ul class="grid-container light-blue">
+										<li>HTML5</li>
+										<li>SCSS</li>
+										<li>CSS Grid</li>
+										<li>CSS Flexbox</li>
+									</ul>
 								</div>
 								<a target="_blank" class="cta-btn cta-btn--hero" href="https://ancient-eyrie-50147.herokuapp.com/">
 									See Live
@@ -250,7 +310,8 @@
 
 		<!-- **** Contact Section **** -->
 		<section id="contact">
-			<div class="container">
+			<div class="filter"></div>
+			<div class="container contact-flex-cont">
 				<h2 class="section-title">
 					Contact
 				</h2>
@@ -258,7 +319,7 @@
 					<p class="contact-wrapper__text">
 						Would you like to work with me? Awesome!
 					</p>
-					<a target="_blank" class="cta-btn cta-btn--resume" href="mailto:example@email.com">Message Me</a>
+					<a target="_blank" class="btn btn--peach btn--animated" href="mailto:example@email.com">Message Me</a>
 				</div>
 			</div>
 		</section>

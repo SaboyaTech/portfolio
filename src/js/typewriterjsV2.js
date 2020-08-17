@@ -1,18 +1,22 @@
 import Typewriter from 'typewriter-effect/dist/core';
 
-const typewriter = new Typewriter('#typewriter', {
-	delay: 75,
+const typewriter1 = new Typewriter('#typewriter-1', {
+	delay: 70,
 	loop: true,
 });
 
-typewriter
-	.pauseFor(1500)
-	.typeString('I am a Full-Stack Developer')
+typewriter1
+	.pauseFor(1800)
+	.start()
+	.typeString("I'm a Full-Stack Web Developer")
 	.pauseFor(1000)
-	.deleteChars(20)
-	.typeString('C.S. Student')
+	.deleteAll()
 	.pauseFor(1000)
-	.deleteChars(12)
-	.typeString('Cyber Secuirty Enthusiast')
+	.typeString('I love being creative')
 	.pauseFor(1000)
-	.start();
+	.deleteAll()
+	.pauseFor(500)
+	.typeString(`I'm passionate about all aspects of tech.`)
+	.pauseFor(1000)
+	.deleteAll()
+	.pauseFor(1000);

@@ -20,7 +20,7 @@
 
 			&:hover,
 			&:active {
-				color: $primary-color;
+				color: $third-color;
 				-webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 				box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 			}
@@ -32,7 +32,8 @@
 		margin-bottom: 1rem;
 		border: 0;
 		width: 50%;
-		border-top: 2px solid rgba(255, 255, 255, 0.1);
+		border-top: 2px solid;
+		border-color: $third-color;
 	}
 }
 
@@ -54,8 +55,14 @@
 
 		&:hover {
 			transform: translateY(-2px);
+			i {
+				color: $third-color;
+			}
 		}
 	}
+}
+#about-me a i {
+	color: $third-color !important;
 }
 
 .back-to-top i {
@@ -65,5 +72,6 @@
 
 	&:hover {
 		transform: translateY(-2px);
+		color: $third-color;
 	}
 }

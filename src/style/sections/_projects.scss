@@ -1,6 +1,5 @@
 #projects {
-	// background-color: $white-color;
-	color: $dark-blue-text;
+	color: $black-color;
 	margin-top: -10rem;
 	padding-top: 15rem;
 
@@ -27,11 +26,11 @@
 		&__text {
 			text-align: left;
 
-			@include respond(phone) {
-				margin-bottom: 2.5rem !important;
-			}
 			@include respond(tab-land) {
 				margin-bottom: 4.8rem;
+			}
+			@include respond(tab-port-sm) {
+				text-align: center;
 			}
 
 			&-title {
@@ -44,8 +43,18 @@
 				}
 			}
 
-			& p > a {
-				color: $secondary-color;
+			.project-description {
+				@include respond(tab-port-sm) {
+					text-align: left;
+				}
+			}
+
+			& a {
+				color: $black-color;
+
+				@include respond(phone) {
+					color: $white-color;
+				}
 			}
 		}
 
@@ -54,8 +63,13 @@
 			margin: 0 auto;
 
 			@include respond(tab-land) {
+				// width: 90%;
+				margin-right: 0;
+			}
+
+			@include respond(between-port) {
 				width: 100%;
-				margin: 0;
+				margin: 0 auto;
 			}
 
 			& .thumbnail {

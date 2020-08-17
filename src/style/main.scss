@@ -1,17 +1,24 @@
+// Vendors Directory
 @import './vendors/bootstrap.scss';
 
+// Abstracts Directory
 @import './abstracts/mixins';
 @import './abstracts/variables';
 @import './abstracts/helpers';
 
+// Base Directory
 @import './base/base';
 @import './base/typography';
 
+// Components Directory
 @import './components/buttons';
+@import './components/techButtons';
 
+// Layout Directory
 @import './layout/footer';
 @import './layout/sections';
 
+// Sections Directory
 @import './sections/about';
 @import './sections/contact';
 @import './sections/hero';

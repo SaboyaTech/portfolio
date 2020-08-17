@@ -1,0 +1,56 @@
+.project-description {
+	.grid-container {
+		list-style: none;
+		padding: 0;
+		width: 100%;
+		text-align: center;
+		// Grid container
+		display: inline-grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 10px;
+		margin-bottom: 2rem;
+
+		@include respond(between-port) {
+			margin: 1.5rem 0 3.5rem 0;
+		}
+
+		li {
+			padding: 7px 2px;
+			border-radius: 5px;
+			color: white;
+			font-size: 1.2rem;
+		}
+
+		@include respond(tab-land) {
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		@include respond(between-port) {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
+
+	.dark-purple li {
+		background-color: #080c4f;
+	}
+
+	.pink li {
+		background-color: #7c2c56;
+	}
+
+	.black li {
+		background-color: #000;
+	}
+
+	.black li {
+		background-color: #000;
+	}
+
+	.gold li {
+		background-color: $third-color;
+	}
+
+	.light-blue li {
+		background-color: #5e91ac;
+	}
+}

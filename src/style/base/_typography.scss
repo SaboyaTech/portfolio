@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+// @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Roboto&family=Work+Sans&display=swap');
+@font-face {
+	font-family: HalveticaNow;
+	src: url(../assets/fonts/HelveticaNowDisplayXBlk.otf);
+}
 
 h1 {
 	font-weight: 700;
@@ -6,21 +11,11 @@ h1 {
 
 #typewriter-section {
 	margin-bottom: 2rem;
-
-	#typewriter {
-		font-weight: 500;
-		font-size: 1.9rem;
-
-		@include respond(phone) {
-			font-weight: 400;
-			font-size: 1.5rem;
-		}
-	}
 }
 
 p,
 a {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Work Sans', sans-serif;
 	font-size: $default-font-size;
 }
 
@@ -36,29 +31,35 @@ a:hover {
 	transition: all 0.3s ease-in-out;
 }
 
+.hero-title,
+.section-title {
+	font-family: HalveticaNow;
+}
+
 .section-title {
 	margin: 0px;
 	margin-bottom: 4.5rem;
 	font-size: $big-font-size;
-	font-weight: bold;
+	font-weight: 100;
 	text-transform: uppercase;
+	color: $third-color;
 
 	@include respond(phone) {
 		font-size: 2.8rem;
 	}
 }
 
-.dark-blue-text {
-	color: $dark-blue-text !important;
+.dark-text {
+	color: $black-color;
 }
 
 .text-color-main {
-	@include supportColorForIE11();
+	// @include supportColorForIE11();
 
 	// Responsive text purple style
 	@include respond(phone) {
 		background-image: none;
-		-webkit-text-fill-color: $secondary-color;
+		-webkit-text-fill-color: $black-color;
 	}
 
 	&:hover {

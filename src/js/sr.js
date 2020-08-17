@@ -33,22 +33,22 @@ export default function () {
 		)
 	);
 
-	ScrollReveal().reveal(
-		'.hero-title-2',
-		assignProps(
-			{
-				delay: 750,
-				origin: window.innerWidth > 768 ? 'left' : 'bottom',
-			},
-			defaultProps
-		)
-	);
+	// ScrollReveal().reveal(
+	// 	'.hero-title-2',
+	// 	assignProps(
+	// 		{
+	// 			delay: 750,
+	// 			origin: window.innerWidth > 768 ? 'left' : 'bottom',
+	// 		},
+	// 		defaultProps
+	// 	)
+	// );
 
 	ScrollReveal().reveal(
-		'#typewriter',
+		'#typewriter-1',
 		assignProps(
 			{
-				delay: 775,
+				delay: 800,
 				origin: window.innerWidth > 768 ? 'left' : 'bottom',
 			},
 			defaultProps
