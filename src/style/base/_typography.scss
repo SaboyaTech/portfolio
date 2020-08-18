@@ -4,6 +4,10 @@
 	font-family: HalveticaNow;
 	src: url(../assets/fonts/HelveticaNowDisplayXBlk.otf);
 }
+@font-face {
+	font-family: Fontania;
+	src: url(../assets/fonts/Fontania.otf);
+}
 
 h1 {
 	font-weight: 700;
@@ -34,23 +38,29 @@ a:hover {
 .hero-title,
 .section-title {
 	font-family: HalveticaNow;
+	text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
 }
 
 .section-title {
 	margin: 0px;
-	margin-bottom: 4.5rem;
+	margin-bottom: 0.5rem;
 	font-size: $big-font-size;
 	font-weight: 100;
 	text-transform: uppercase;
-	color: $third-color;
+	// color: $third-color;
+	padding-bottom: 4rem;
 
 	@include respond(phone) {
 		font-size: 2.8rem;
 	}
 }
 
-.dark-text {
-	color: $black-color;
+.project-text {
+	margin-bottom: 8rem;
+
+	@include respond(phone) {
+		margin-bottom: 3rem;
+	}
 }
 
 .text-color-main {

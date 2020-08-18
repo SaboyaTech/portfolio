@@ -97,6 +97,9 @@
 
 // button fx
 .btn {
+	@include respond(phone) {
+		margin-top: 10rem;
+	}
 	&:link,
 	&:visited {
 		text-decoration: uppercase;
@@ -114,7 +117,6 @@
 	&:hover {
 		transform: translateY(-3px);
 		box-shadow: 0 1rem 2rem rgba(black, 0.2);
-		color: $white-color;
 	}
 
 	&:active {
@@ -124,12 +126,43 @@
 
 	&--peach {
 		background-color: $third-color;
-		color: $white-color;
+		color: #070707;
+		animation: pulse-animation 2s infinite !important;
+
+		@keyframes pulse-animation {
+			0% {
+				box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.25);
+			}
+			100% {
+				box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+			}
+		}
+
+		padding: 1.8rem 2.8rem !important;
+		&:focus {
+			outline: none;
+			box-shadow: none;
+		}
 
 		&::after {
 			background-color: $third-color;
 		}
 	}
+
+	// &--purple {
+	// 	background-color: $secondary-color;
+	// 	color: $third-color;
+	// 	padding: 2rem 3rem !important;
+
+	// 	&:focus {
+	// 		outline: none;
+	// 		box-shadow: none;
+	// 	}
+
+	// 	&::after {
+	// 		background-color: $secondary-color;
+	// 	}
+	// }
 
 	&::after {
 		content: '';

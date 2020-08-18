@@ -1,13 +1,31 @@
+header {
+	position: relative;
+	height: 100vh;
+	overflow: hidden;
+	// background-color: rgb(255, 255, 255);
+	z-index: 3;
+
+	video {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		min-width: 100%;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+		z-index: -4;
+		transform: translate(-50%, -50%);
+	}
+}
+
 #filter {
-	// background: url(../assets/img1.jpg);
-	background: url(../assets/abstract1.jpg);
-	background-position-x: center;
-	background-size: cover;
-	background-color: rgb(0, 0, 0);
+	position: relative;
+	height: 100%;
+	width: 100%;
 }
 
 #hero {
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.65);
 	min-height: 100vh;
 	height: 100vh;
 	width: 100%;
@@ -16,7 +34,7 @@
 	border-bottom: 0px;
 	font-weight: 400;
 	color: $white-color;
-	padding: 0rem 5.6rem;
+	padding: 0rem 3.6rem;
 	margin-bottom: 0;
 	top: 0;
 	left: 0;
@@ -24,14 +42,20 @@
 	right: 0;
 	z-index: -1;
 
+	.container > * {
+		margin: 1rem 0;
+		padding: 1rem 0;
+	}
+
 	@include respond(phone) {
 		padding: 0rem $default-font-size;
 	}
 
 	.hero-title {
-		font-size: 5.6rem;
+		font-size: 7.6rem;
 		font-weight: 100;
-		margin-bottom: 2rem;
+		margin-bottom: 0;
+
 		text-align: left;
 
 		span {
@@ -46,8 +70,10 @@
 			text-align: center;
 		}
 		@include respond(phone) {
+			margin-top: 20rem;
 			font-size: 3.3rem;
 			line-height: 2rem;
+			margin-bottom: 2rem;
 		}
 		@include respond(phone-xs) {
 			font-size: 1.5rem;
@@ -57,31 +83,42 @@
 	#sub-hero-title {
 		text-align: left;
 		font-size: 3rem;
-	}
+		margin-top: 0;
 
-	#typewriter-1 {
-		font-weight: 500;
-		font-size: 3rem;
-
-		text-align: left;
-
-		@include respond(tab-land) {
-		}
 		@include respond(tab-port) {
-			font-size: 2.5rem;
+			font-size: 2.3rem;
 			text-align: center;
 		}
 		@include respond(phone) {
-			font-weight: 400;
-			font-size: 1.9rem;
-		}
-		@include respond(phone-xs) {
-			font-size: 1.5rem;
+			font-size: 2remrem;
+			line-height: 2rem;
 		}
 	}
 
+	// #typewriter-1 {
+	// 	color: rgb(197, 197, 197);
+	// 	font-weight: 500;
+	// 	font-size: 2rem;
+
+	// 	text-align: left;
+
+	// 	@include respond(tab-land) {
+	// 	}
+	// 	@include respond(tab-port) {
+	// 		font-size: 1.9rem;
+	// 		text-align: center;
+	// 	}
+	// 	@include respond(phone) {
+	// 		font-weight: 400;
+	// 		font-size: 1.5rem;
+	// 	}
+	// 	@include respond(phone-xs) {
+	// 		font-size: 1.5rem;
+	// 	}
+	// }
+
 	.hero-cta {
-		margin-top: 3rem;
+		margin-top: 5rem;
 		display: flex;
 
 		@include respond(tab-port) {

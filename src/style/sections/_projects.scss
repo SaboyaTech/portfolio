@@ -37,9 +37,15 @@
 				font-weight: bold;
 				margin-bottom: 1.8rem;
 				font-size: $mid-font-size;
+				font-weight: 900;
+				text-align: left;
+				border-bottom: 2px solid black;
+				width: 60%;
+				padding-bottom: 1rem;
 
 				@include respond(phone) {
 					font-size: 2rem;
+					width: 40%;
 				}
 			}
 
