@@ -41,7 +41,7 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
 	@if $breakpoint == between-port {
 		@media (max-width: 61.95em) {
 			@content;
-		} //900px
+		} //992px
 	}
 	// Table Landscape
 	@if $breakpoint == tab-land {
