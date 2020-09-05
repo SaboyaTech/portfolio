@@ -63,7 +63,7 @@ header {
 		}
 
 		@include respond(tab-land) {
-			font-size: 1rem;
+			font-size: 5.5rem;
 		}
 		@include respond(tab-port) {
 			font-size: 4.3rem;
