@@ -11,7 +11,7 @@ module.exports = {
 				use: ['html-loader'],
 			},
 			{
-				test: /\.(woff(2)?|ttf|otf|eot|jpg|jpeg|png|gif|svg|pdf)(\?v=\d+\.\d+\.\d+)?$/,
+				test: /\.(woff(2)?|ttf|otf|eot|jpg|jpeg|png|mp4|gif|svg|pdf)(\?v=\d+\.\d+\.\d+)?$/,
 				use: [
 					{
 						loader: 'file-loader',
