@@ -26,16 +26,11 @@
 	<body>
 		<header>
 			<div id="video-wrapper">
-				<video playsinline muted autoplay loop>
-					<!-- <source src="./assets/typingVideoBg.mp4" type="video/mp4"> -->
+				<video playsinline muted autoplay loop poster="./assets/poster1.jpg">
 					<source src="https://portfolio-background-video.s3.amazonaws.com/shortTypingVideoBg720.mp4" type="video/mp4">
-					<!-- <source src="https://s3.amazonaws.com/portfolio-background-video/typingVideoBg.mp4" type="video/mp4"> -->
-					<!-- <source src="./assets/shortTypingVideoBg720.mp4" type="video/mp4"> -->
-					<!-- <source src="./assets/typingVideoBg720.mp4" type="video/mp4"> -->
 				</video>
-				<!-- <video playsinline muted autoplay loop class="header__video"> -->
-				<!-- </video> -->
 			</div>
+
 			<!-- **** Hero Section **** -->
 			<div id="filter">
 				<div id="hero">
@@ -116,41 +111,49 @@
 					<h2 class="section-title project-text">
 						Projects
 					</h2>
-					<!-- Cosmo Junkie Each .row is a project -->
+
+					<!-- Drone JS Each .row is a project -->
 					<div class="row">
-						<div class="col-lg-4 col-sm-12 main-wrapper">
+						<div class="col-lg-4 col-sm-12">
 							<div class="project-wrapper__text">
-								<h3 class="project-wrapper__text-title">
-									Cosmo Junkie
-								</h3>
+								<h3 class="project-wrapper__text-title">Take Flight</h3>
 								<div class="project-description">
 									<p class="mb-4">
-										A mobile-first responsive build with a space theme.
-										This site was built utilizing:
+										A React.js Drone application that uses a Node.js backend to
+										communicate with the DJI Tello Drone via UDP4 sockets,
+										and to communicate to and from the browser Socket.io was implemented.
+										Data sent back from the drone was used to display it's current position
+										in a gyroscope ui, the drone's battery level.
+										Flight data was recorded into a MySql database.
 									</p>
-									<ul class="grid-container dark-purple">
-										<li>HTML5</li>
-										<li>SCSS</li>
-										<li>CSS Grid</li>
-										<li>CSS Flexbox</li>
+									<ul class="grid-container light-blue">
+										<li>React</li>
+										<li>CSS3</li>
+										<li>Node</li>
+										<li>Next.js</li>
+										<li>UDP4</li>
+										<li>Socket.io</li>
+										<li>MySql</li>
+										<li>Sequalize</li>
 									</ul>
 								</div>
-								<a target="_blank" class="cta-btn cta-btn--hero"
-									href="https://saboyadev.github.io/Mobile-First-Responsive-Cosmo-Junkie/">
+								<a target="_blank" class="cta-btn cta-btn--hero" href="https://ancient-eyrie-50147.herokuapp.com/">
 									See Live
 								</a>
-								<a target="_blank" class="cta-btn text-color-main"
-									href="https://github.com/SaboyaDev/Mobile-First-Responsive-Cosmo-Junkie">
+								<a id='watchDemo' target="_blank" class="cta-btn cta-btn--hero"
+									href="https://www.youtube.com/watch?v=izNCqQCPWCQ&t=3s">
+									Watch Demo
+								</a>
+								<a target="_blank" class="cta-btn text-color-main" href="#!">
 									Github
 								</a>
 							</div>
 						</div>
-
 						<div class="col-lg-8 col-sm-12">
 							<div class="project-wrapper__image">
-								<a href="https://saboyadev.github.io/Mobile-First-Responsive-Cosmo-Junkie/" target="_blank">
+								<a href="https://ancient-eyrie-50147.herokuapp.com" target="_blank">
 									<div data-tilt class="thumbnail rounded">
-										<img class="img-fluid" src="https://personal-portfolio-2020.s3.amazonaws.com/cosmo-junkie.gif" />
+										<img class="img-fluid" src="https://personal-portfolio-2020.s3.amazonaws.com/takeflight.gif" />
 									</div>
 								</a>
 							</div>
@@ -209,45 +212,6 @@
 					</div>
 					<!-- /END Project -->
 
-					<!-- React E-Commerce Store Each .row is a project -->
-					<!-- <div class="row">
-						<div class="col-lg-4 col-sm-12">
-							<div class="project-wrapper__text">
-								<h3 class="project-wrapper__text-title">
-									CRWN Store
-								</h3>
-								<div class="project-description">
-									<p class="mb-4">
-										A fictitious e-Commerce store built on the Mearn Stack.
-									</p>
-									<ul class="grid-container black">
-										<li>React</li>
-										<li>SCSS</li>
-										<li>Node</li>
-										<li>Express</li>
-										<li>MangoDB</li>
-									</ul>
-								</div>
-								<a target="_blank" class="cta-btn cta-btn--hero" href="#!">
-									See Live
-								</a>
-								<a target="_blank" class="cta-btn text-color-main" href="#!">
-									Github
-								</a>
-							</div>
-						</div>
-						<div class="col-lg-8 col-sm-12">
-							<div class="project-wrapper__image">
-								<a href="#!" target="_blank">
-									<div data-tilt class="thumbnail rounded">
-										<img class="img-fluid" src="https://personal-portfolio-2020.s3.amazonaws.com/crwn_clothing.png" />
-									</div>
-								</a>
-							</div>
-						</div>
-					</div> -->
-					<!-- /END Project -->
-
 					<!-- Secure Fox Each .row is a project -->
 					<div class="row">
 						<div class="col-lg-4 col-sm-12">
@@ -288,37 +252,69 @@
 					</div>
 					<!-- /END Project -->
 
-					<!-- Drone JS Each .row is a project -->
+					<!-- Cosmo Junkie Each .row is a project -->
 					<div class="row">
-						<div class="col-lg-4 col-sm-12">
+						<div class="col-lg-4 col-sm-12 main-wrapper">
 							<div class="project-wrapper__text">
-								<h3 class="project-wrapper__text-title">Take Flight</h3>
+								<h3 class="project-wrapper__text-title">
+									Cosmo Junkie
+								</h3>
 								<div class="project-description">
 									<p class="mb-4">
-										A React.js Drone application that uses a Node.js backend to
-										communicate with the DJI Tello Drone via UDP4 sockets,
-										and to communicate to and from the browser Socket.io was implemented.
-										Data sent back from the drone was used to display it's current position
-										in a gyroscope ui, the drone's battery level.
-										Flight data was recorded into a MySql database.
+										A mobile-first responsive build with a space theme.
+										This site was built utilizing:
 									</p>
-									<ul class="grid-container light-blue">
-										<li>React</li>
-										<li>CSS3</li>
-										<li>Node</li>
-										<li>Next.js</li>
-										<li>UDP4</li>
-										<li>Socket.io</li>
-										<li>MySql</li>
-										<li>Sequalize</li>
+									<ul class="grid-container dark-purple">
+										<li>HTML5</li>
+										<li>SCSS</li>
+										<li>CSS Grid</li>
+										<li>CSS Flexbox</li>
 									</ul>
 								</div>
-								<a target="_blank" class="cta-btn cta-btn--hero" href="https://ancient-eyrie-50147.herokuapp.com/">
+								<a target="_blank" class="cta-btn cta-btn--hero"
+									href="https://saboyadev.github.io/Mobile-First-Responsive-Cosmo-Junkie/">
 									See Live
 								</a>
-								<a target="_blank" class="cta-btn cta-btn--hero"
-									href="https://www.youtube.com/watch?v=izNCqQCPWCQ&t=3s">
-									Watch Demo
+								<a target="_blank" class="cta-btn text-color-main"
+									href="https://github.com/SaboyaDev/Mobile-First-Responsive-Cosmo-Junkie">
+									Github
+								</a>
+							</div>
+						</div>
+
+						<div class="col-lg-8 col-sm-12">
+							<div class="project-wrapper__image">
+								<a href="https://saboyadev.github.io/Mobile-First-Responsive-Cosmo-Junkie/" target="_blank">
+									<div data-tilt class="thumbnail rounded">
+										<img class="img-fluid" src="https://personal-portfolio-2020.s3.amazonaws.com/cosmo-junkie.gif" />
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- /END Project -->
+
+					<!-- React E-Commerce Store Each .row is a project -->
+					<!-- <div class="row">
+						<div class="col-lg-4 col-sm-12">
+							<div class="project-wrapper__text">
+								<h3 class="project-wrapper__text-title">
+									CRWN Store
+								</h3>
+								<div class="project-description">
+									<p class="mb-4">
+										A fictitious e-Commerce store built on the Mearn Stack.
+									</p>
+									<ul class="grid-container black">
+										<li>React</li>
+										<li>SCSS</li>
+										<li>Node</li>
+										<li>Express</li>
+										<li>MangoDB</li>
+									</ul>
+								</div>
+								<a target="_blank" class="cta-btn cta-btn--hero" href="#!">
+									See Live
 								</a>
 								<a target="_blank" class="cta-btn text-color-main" href="#!">
 									Github
@@ -327,15 +323,16 @@
 						</div>
 						<div class="col-lg-8 col-sm-12">
 							<div class="project-wrapper__image">
-								<a href="https://ancient-eyrie-50147.herokuapp.com" target="_blank">
+								<a href="#!" target="_blank">
 									<div data-tilt class="thumbnail rounded">
-										<img class="img-fluid" src="https://personal-portfolio-2020.s3.amazonaws.com/takeflight.gif" />
+										<img class="img-fluid" src="https://personal-portfolio-2020.s3.amazonaws.com/crwn_clothing.png" />
 									</div>
 								</a>
 							</div>
 						</div>
-					</div>
+					</div> -->
 					<!-- /END Project -->
+
 				</div>
 			</div>
 		</section>
