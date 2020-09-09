@@ -8,6 +8,19 @@ export default function () {
 		mobile: true,
 	};
 
+	/* Video */
+	ScrollReveal().reveal(
+		'.Video-wrapper',
+		assignProps(
+			{
+				delay: 300,
+				distance: '0px',
+				origin: 'bottom',
+			},
+			defaultProps
+		)
+	);
+
 	/* Section Title */
 	ScrollReveal().reveal(
 		'.section-title',
