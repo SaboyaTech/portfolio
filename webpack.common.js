@@ -11,7 +11,7 @@ module.exports = {
 				use: ['html-loader'],
 			},
 			{
-				test: /\.(woff(2)?|ttf|otf|eot|jpg|jpeg|png|mp4|gif|svg|pdf)(\?v=\d+\.\d+\.\d+)?$/,
+				test: /\.(woff(2)?|ttf|otf|eot|jpg|jpeg|png|gif|svg|pdf)(\?v=\d+\.\d+\.\d+)?$/,
 				use: [
 					{
 						loader: 'file-loader',
@@ -19,6 +19,18 @@ module.exports = {
 							name: '[name].[hash].[ext]',
 							outputPath: 'assets',
 							esModule: false,
+						},
+					},
+				],
+			},
+			{
+				test: /\.(mp4|webm)$/,
+				use: [
+					{
+						loader: 'file-loader',
+						options: {
+							name: '[name].[hash].[ext]',
+							outputPath: 'assets',
 						},
 					},
 				],
