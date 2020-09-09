@@ -10,7 +10,7 @@ export default function () {
 
 	/* Video */
 	ScrollReveal().reveal(
-		'.Video-wrapper',
+		'.video-wrapper',
 		assignProps(
 			{
 				delay: 300,
