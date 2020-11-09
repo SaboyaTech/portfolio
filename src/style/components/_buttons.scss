@@ -117,6 +117,7 @@
 	&:hover {
 		transform: translateY(-3px);
 		box-shadow: 0 1rem 2rem rgba(black, 0.2);
+		color: #070707;
 	}
 
 	&:active {
@@ -126,7 +127,7 @@
 
 	&--peach {
 		background-color: $third-color;
-		color: #070707;
+		color: $white-color;
 		animation: pulse-animation 2s infinite !important;
 
 		@keyframes pulse-animation {
