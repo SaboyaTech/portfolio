@@ -5,6 +5,10 @@
 	top: 0;
 	padding: 0.5rem 2rem;
 	z-index: 40;
+
+	@include respond(md) {
+		padding: 1rem 4.35rem;
+	}
 }
 
 .header-container {

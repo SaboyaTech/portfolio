@@ -46,8 +46,8 @@
 			font-family: Fontania, 'sans-serif';
 			font-size: 4.5rem;
 
-			@include respond(phone) {
-				font-size: 5.5rem;
+			@include respond(md) {
+				font-size: 7.5rem;
 			}
 		}
 	}
