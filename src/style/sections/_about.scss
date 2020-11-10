@@ -3,7 +3,7 @@
 	height: 100%;
 	border-top: 0px;
 	padding-bottom: 2%;
-	padding-top: 4%;
+	padding-top: 6rem;
 
 	.about-wrapper {
 		padding: 5rem 0;
@@ -55,32 +55,19 @@
 				@include respond(tab-port-sm) {
 					text-align: center;
 				}
-
-				// &--important {
-				// 	background: darken($secondary-color, 1%);
-				// 	display: inline-block;
-				// 	font-style: italic;
-				// 	padding: 0 0.3rem;
-				// 	margin: 0.3rem 0;
-				// 	line-height: 1.6;
-
-				// 	@include respond(phone) {
-				// 		display: inline;
-				// 		margin: 0;
-				// 		padding: 0;
-				// 		background: transparent;
-				// 		font-style: normal;
-				// 	}
-				// }
 			}
 		}
 	}
 }
 
 // Social Media Icons
+
+// .social-links a:first-child {
+// 	margin: 0 $default-font-size 0 0;
+// }
+
 #about-me.social-links {
 	margin-top: 5rem;
-	justify-content: left;
 
 	& a i {
 		color: black;
