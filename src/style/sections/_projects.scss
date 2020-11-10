@@ -1,5 +1,5 @@
 #projects {
-	color: $black-color;
+	color: $black;
 	// margin-top: -10rem;
 	padding-top: 5rem;
 
@@ -47,6 +47,10 @@
 					font-size: 2rem;
 					width: 40%;
 				}
+
+				.sub-title {
+					font-size: 1.8rem;
+				}
 			}
 
 			.project-description {
@@ -56,7 +60,7 @@
 			}
 
 			& a {
-				color: $black-color;
+				color: $black;
 
 				@include respond(phone) {
 					color: $white-color;

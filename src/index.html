@@ -13,11 +13,15 @@
 			content="saboya_dev, Jose Saboya, developer, digital marketing, javascript, react, new jersey" />
 		<!-- Improve SEO by adding a small descrption of you -->
 		<meta name="description" content="Jose L Saboya | Developer" />
+		<!-- Normalize -->
+		<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
 
 		<!-- Required librarys -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
+		<script src="https://kit.fontawesome.com/8443c557df.js" crossorigin="anonymous"></script>
+
 		<script src="https://unpkg.com/scrollreveal"></script>
-		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script>
 			ScrollReveal({ reset: false });
 		</script>
@@ -34,6 +38,37 @@
 
 			<!-- **** Hero Section **** -->
 			<div id="filter">
+				<div class="navbar">
+
+					<div class="container header-container">
+
+						<!-- Logo -->
+						<div class="logo">
+							<img src="assets/goldMyLogo.svg" height="60px" width="200px" alt="" class="logo-img">
+						</div>
+
+						<!-- Button -->
+						<input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+						<!-- Menu -->
+						<div class="menu">
+							<nav>
+								<a href="#">Home</a>
+								<a href="#about">About Me</a>
+								<a href="#projects">Projects</a>
+								<a href="#contact">Contact Me</a>
+							</nav>
+
+						</div>
+						<!-- Hamburger Menu -->
+						<label for="nav-toggle" class="nav-toggle-label">
+							<span><i class="fas fa-bars"></i></span>
+						</label>
+
+					</div> <!-- END container header-container -->
+				</div>
+
+
 				<div id="hero">
 					<div class="container">
 						<h1 class="hero-title">
@@ -72,24 +107,24 @@
 								and academic background can be applied to add value to an organization.
 							</p>
 
-							<span class="d-flex mt-3">
-								<a target="_blank" class="btn btn--peach btn--animated" href="src/assets/demo Jose L Saboya CV.pdf">
+							<span class="mt-3">
+								<a target="_blank" class="btn btn--peach btn--animated" href="src/assets/yellowResume.pdf">
 									View Resume
 								</a>
 							</span>
 
 							<div id="about-me" class="social-links ">
 								<a href="https://twitter.com/saboya_dev" target="_blank">
-									<i class="twitter fa fa-twitter fa-inverse"></i>
+									<i class="fa fa-twitter fa-inverse"></i>
 								</a>
 								<a href="https://www.instagram.com/saboya_dev/" target="_blank">
-									<i class="instagram fa fa-instagram fa-inverse"></i>
+									<i class="fa fa-instagram fa-inverse"></i>
 								</a>
 								<a href="https://linkedin.com/in/joseluissaboya" target="_blank">
-									<i class="linked-in fa fa-linkedin fa-inverse"></i>
+									<i class="fa fa-linkedin fa-inverse"></i>
 								</a>
 								<a href="https://github.com/SaboyaDev" target="_blank">
-									<i class="github fa fa-github fa-inverse"></i>
+									<i class="fa fa-github fa-inverse"></i>
 								</a>
 							</div>
 
@@ -112,7 +147,9 @@
 					<div class="row">
 						<div class="col-lg-4 col-sm-12">
 							<div class="project-wrapper__text">
-								<h3 class="project-wrapper__text-title">Take Flight</h3>
+								<h3 class="project-wrapper__text-title">Take Flight -
+									<span class="sub-title">Node.js Drone Project</span>
+								</h3>
 								<div class="project-description">
 									<p class="mb-4">
 										A React.js Drone application that uses a Node.js backend to
@@ -162,7 +199,8 @@
 						<div class="col-lg-4 col-sm-12">
 							<div class="project-wrapper__text">
 								<h3 class="project-wrapper__text-title">
-									Face-Rec
+									Smart Brain -
+									<span class="sub-title">Facial Recognition App</span>
 								</h3>
 								<div class="project-description">
 									<p class="mb-4">
@@ -212,10 +250,19 @@
 					<div class="row">
 						<div class="col-lg-4 col-sm-12">
 							<div class="project-wrapper__text">
-								<h3 class="project-wrapper__text-title">Secure Fox</h3>
+								<h3 class="project-wrapper__text-title">
+									Secure Fox -
+									<span class="sub-title">The Most Secured Digital Journal With AES 256 BIT Encryption</span>
+								</h3>
 								<div class="project-description">
 									<p class="mb-4">
-										A digital jounal
+										Our team took on this challenge with the idea in mind that there was a lack of online journal
+										application services.
+										Secure Fox is a journal web-application project where users can create an account, write a secure
+										journal entry and save it so that they
+										access it whenever they want. It uses AES 256 BIT Encryption. I was in charged for the Front-end and
+										Database.
+
 									</p>
 									<ul class="grid-container gold">
 										<li>HTML5</li>
@@ -253,7 +300,8 @@
 						<div class="col-lg-4 col-sm-12 main-wrapper">
 							<div class="project-wrapper__text">
 								<h3 class="project-wrapper__text-title">
-									Cosmo Junkie
+									Cosmo Junkie -
+									<span class="sub-title">CSS Grid</span>
 								</h3>
 								<div class="project-description">
 									<p class="mb-4">
@@ -374,9 +422,10 @@
 
 				<hr />
 
-				<p class="footer__text">
+				<p id="footer" class="footer__text">
 					© 2020 - Developed by
-					<a href="https://github.com/joseluissaboya" target="_blank">Jose L Saboya</a>
+					<a href="https://github.com/joseluissaboya" target="_blank"><img src="assets/whiteMyLogo.svg" height="20px"
+							width="100px" alt="" id="footer-logo-img"></a>
 				</p>
 			</div>
 		</footer>

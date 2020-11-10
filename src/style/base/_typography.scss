@@ -47,7 +47,7 @@ a:hover {
 	font-size: $big-font-size;
 	font-weight: 100;
 	text-transform: uppercase;
-	// color: $third-color;
+	// color: $primary;
 	padding-bottom: 4rem;
 
 	@include respond(phone) {
@@ -69,10 +69,44 @@ a:hover {
 	// Responsive text purple style
 	@include respond(phone) {
 		background-image: none;
-		-webkit-text-fill-color: $black-color;
+		-webkit-text-fill-color: $black;
 	}
 
 	&:hover {
 		transform: translateX(2px);
+	}
+}
+
+// Navbar Fonts
+.nav-toggle-label {
+	font-size: 2.4rem;
+}
+
+// Nav Menu
+.menu {
+	background-color: $black;
+	& a {
+		font-size: 1.4rem;
+		color: $primary;
+		text-transform: uppercase;
+		padding: 1rem 2rem;
+
+		@include respond(sm) {
+			padding: 0;
+			margin-left: 2rem;
+		}
+		@include respond(md) {
+			margin-left: 4rem;
+		}
+
+		&:hover {
+			color: $black;
+			background-color: $white;
+
+			@include respond(sm) {
+				background-color: $black;
+				color: white;
+			}
+		}
 	}
 }

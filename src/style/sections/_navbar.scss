@@ -1,0 +1,87 @@
+.navbar {
+	background-color: black;
+	position: absolute;
+	width: 100vw;
+	top: 0;
+	padding: 0.5rem 2rem;
+	z-index: 40;
+}
+
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0;
+
+	// Logo
+	& .logo {
+		display: flex;
+		align-items: center;
+	}
+
+	// Hamburger Menu Icon
+	& .nav-toggle-label {
+		cursor: pointer;
+		color: $primary;
+	}
+	// Nav Menu
+	.menu {
+		width: 100%;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		transform: scale(1, 0);
+		transform-origin: top;
+		transition: transform 400ms ease-in-out;
+
+		nav {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		& a {
+			opacity: 0;
+			transition: opacity 150ms ease-in-out;
+			display: inline-block;
+			width: 100%;
+			text-align: left;
+		}
+	}
+
+	// Toggle Checkbox
+	.nav-toggle {
+		display: none;
+
+		&:checked {
+			& + .menu {
+				transform: scale(1, 1);
+				& a {
+					opacity: 1;
+					transition: opacity 250ms ease-in-out 250ms;
+				}
+			}
+		}
+	}
+}
+
+@include respond(sm) {
+	.nav-toggle-label {
+		display: none;
+	}
+	.header-container {
+		& .menu {
+			all: unset;
+			& a {
+				width: auto;
+			}
+			& nav {
+				flex-direction: row;
+				justify-content: flex-end;
+			}
+			& a {
+				opacity: 1;
+			}
+		}
+	}
+}

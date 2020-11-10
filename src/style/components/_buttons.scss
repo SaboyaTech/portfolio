@@ -23,23 +23,23 @@
 
 /* Hero Style */
 .cta-btn--hero {
-	@include supportColorForIE11();
+	// @include supportColorForIE11();
 	border: 2px solid;
-	border-color: $black-color;
-	color: $black-color;
+	border-color: $black;
+	color: $black;
 
-	@include supportIE11() {
-		color: $black-color !important;
-		&:hover {
-			color: $black-color !important;
-		}
-	}
+	// @include supportIE11() {
+	// 	color: $black !important;
+	// 	&:hover {
+	// 		color: $black !important;
+	// 	}
+	// }
 	// Responsive Button hero style
 	// @include respond(phone) {
 	// 	background-image: none;
-	// 	border: 2px solid $black-color;
-	// 	color: $white-color;
-	// 	-webkit-text-fill-color: $black-color;
+	// 	border: 2px solid $black;
+	// 	color: $white;
+	// 	-webkit-text-fill-color: $black;
 	// }
 
 	&::after {
@@ -48,21 +48,21 @@
 		// 	$primary-color 0%,
 		// 	$secondary-color 100%
 		// );
-		background-color: $black-color;
+		background-color: $black;
 		// Responsive Button hero style
 		// @include respond(phone) {
 		// 	background-image: none;
-		// 	color: $white-color;
+		// 	color: $white;
 		// }
 	}
 
 	&:hover {
-		-webkit-text-fill-color: $white-color;
+		-webkit-text-fill-color: $white;
 		text-decoration: none;
 		// Responsive Button hover hero style
 		// @include respond(phone) {
-		// 	color: $white-color;
-		// 	-webkit-text-fill-color: $black-color;
+		// 	color: $white;
+		// 	-webkit-text-fill-color: $black;
 		// }
 
 		&::after {
@@ -72,44 +72,40 @@
 }
 
 /* Resume Style */
-.cta-btn--resume {
-	color: $white-color;
-	border: 2px solid $third-color;
+// .cta-btn--resume {
+// 	color: $white;
+// 	border: 2px solid $primary;
 
-	&::after {
-		background: $third-color;
-	}
+// 	&::after {
+// 		background: $primary;
+// 	}
 
-	&:hover {
-		color: $white-color;
-		text-decoration: none;
+// 	&:hover {
+// 		color: $white;
+// 		text-decoration: none;
 
-		&::after {
-			width: 100%;
-		}
-	}
-}
+// 		&::after {
+// 			width: 100%;
+// 		}
+// 	}
+// }
 
 /* Arrow Button */
 .up i {
-	color: #272727;
+	color: $white;
 }
 
 // button fx
 .btn {
-	@include respond(phone) {
-		margin-top: 10rem;
-	}
 	&:link,
 	&:visited {
 		text-decoration: uppercase;
 		text-decoration: none;
-		padding: 0.8rem $default-font-size;
+		padding: 1.8rem 2.8rem;
 		display: inline-block;
 		border-radius: 10rem;
 		transition: all 0.2s;
 		position: relative;
-		font-size: 1.9rem !important;
 		font-weight: bold;
 		line-height: 1;
 	}
@@ -126,9 +122,10 @@
 	}
 
 	&--peach {
-		background-color: $third-color;
-		color: $white-color;
+		background-color: $primary;
+		color: black;
 		animation: pulse-animation 2s infinite !important;
+		font-size: 1.6rem;
 
 		@keyframes pulse-animation {
 			0% {
@@ -139,31 +136,15 @@
 			}
 		}
 
-		padding: 1.8rem 2.8rem !important;
 		&:focus {
 			outline: none;
 			box-shadow: none;
 		}
 
 		&::after {
-			background-color: $third-color;
+			background-color: $primary;
 		}
 	}
-
-	// &--purple {
-	// 	background-color: $secondary-color;
-	// 	color: $third-color;
-	// 	padding: 2rem 3rem !important;
-
-	// 	&:focus {
-	// 		outline: none;
-	// 		box-shadow: none;
-	// 	}
-
-	// 	&::after {
-	// 		background-color: $secondary-color;
-	// 	}
-	// }
 
 	&::after {
 		content: '';
