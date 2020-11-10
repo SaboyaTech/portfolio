@@ -1,7 +1,7 @@
 .footer {
 	background-color: $dark;
 	color: $white;
-	padding: 4.8rem 0;
+	padding: 1rem 0 4.8rem 0;
 
 	@include respond(phone) {
 		border: 0px;
@@ -29,7 +29,7 @@
 
 	& hr {
 		border: 0;
-		width: 50%;
+		width: 80%;
 		border-top: 2px solid;
 		border-color: $primary;
 		margin: 2rem auto;
@@ -40,6 +40,7 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	margin-top: 1.3rem;
 
 	a {
 		display: flex;
@@ -63,7 +64,7 @@
 
 .back-to-top i {
 	color: $white;
-	margin: 1rem 0 $default-font-size;
+
 	transition: all 0.2s ease-in;
 
 	&:hover {

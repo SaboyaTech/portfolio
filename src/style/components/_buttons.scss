@@ -101,7 +101,7 @@
 	&:visited {
 		text-decoration: uppercase;
 		text-decoration: none;
-		padding: 1.8rem 2.8rem;
+		padding: 1.4rem 2.4rem;
 		display: inline-block;
 		border-radius: 10rem;
 		transition: all 0.2s;
@@ -125,7 +125,7 @@
 		background-color: $primary;
 		color: black;
 		animation: pulse-animation 2s infinite !important;
-		font-size: 1.6rem;
+		font-size: $default-font-size;
 
 		@keyframes pulse-animation {
 			0% {

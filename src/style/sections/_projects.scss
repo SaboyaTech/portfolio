@@ -1,7 +1,5 @@
 #projects {
 	color: $black;
-	// margin-top: -10rem;
-	padding-top: 5rem;
 
 	@include respond(tab-land) {
 		margin-top: 0;
@@ -9,14 +7,14 @@
 	}
 
 	.project-wrapper {
-		margin-bottom: 15rem;
+		// margin-bottom: 15rem;
 
 		@include respond(phone) {
 			margin-bottom: 0rem;
 		}
 
 		.row {
-			margin-bottom: 8rem;
+			margin-bottom: 6.5rem;
 
 			@include respond(phone) {
 				margin-bottom: 4rem;
@@ -69,8 +67,8 @@
 		}
 
 		&__image {
-			width: 90%;
-			margin: 0 auto;
+			width: 100%;
+			margin: 4rem auto;
 
 			@include respond(tab-land) {
 				// width: 90%;
