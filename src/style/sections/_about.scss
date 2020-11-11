@@ -42,8 +42,8 @@
 			}
 
 			&-text {
-				margin-top: 6.5rem;
-				margin-bottom: 5rem;
+				margin-top: 5.5rem;
+				margin-bottom: 3rem;
 
 				@include respond(tab-port) {
 					text-align: left;
@@ -63,7 +63,7 @@
 // }
 
 #about-me.social-links {
-	margin-top: 4rem;
+	margin-top: 5rem;
 
 	& a i {
 		color: black;
