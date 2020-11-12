@@ -6,10 +6,21 @@
 	padding: 0.5rem 2rem;
 	z-index: 40;
 
+	@include respond(sm) {
+		background-color: transparent;
+		// transition: background-color 0.5s linear;
+		transition: top 0.3s;
+	}
+
 	@include respond(md) {
 		padding-top: 1rem;
 		padding-bottom: 1rem;
 	}
+}
+
+.nav-solid {
+	background-color: #000000 !important;
+	position: fixed;
 }
 
 .header-container {
