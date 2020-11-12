@@ -7,6 +7,8 @@
 	z-index: 40;
 
 	@include respond(md) {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
 	}
 }
 
@@ -14,7 +16,12 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0;
+
+	// @include respond(sm) {
+	// 	max-width: 540px;
+	// 	margin-left: auto;
+	// 	margin-right: auto;
+	// }
 
 	// Logo
 	& .logo {

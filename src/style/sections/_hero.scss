@@ -66,6 +66,12 @@ header {
 			margin-top: 8rem; //landscape
 			font-size: 4.2rem;
 		}
+		@include respond(lg) {
+			font-size: 5.3rem;
+		}
+		@include respond(lg) {
+			font-size: 8.3rem;
+		}
 
 		span {
 			color: $primary;
@@ -77,13 +83,13 @@ header {
 		font-size: $mid-font-size;
 		margin-top: 0;
 
-		@include respond(tab-port) {
-			font-size: 2.3rem;
-			text-align: center;
+		@include respond(lg) {
+			font-size: 2.5rem;
+			margin-top: 1.2rem;
 		}
-		@include respond(phone) {
-			font-size: 2remrem;
-			line-height: 2rem;
+		@include respond(xl) {
+			font-size: 3.5rem;
+			margin-top: 1.2rem;
 		}
 	}
 
