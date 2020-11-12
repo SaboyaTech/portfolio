@@ -21,6 +21,10 @@ p,
 a {
 	font-family: 'Work Sans', sans-serif;
 	font-size: $default-font-size;
+
+	@include respond(lg) {
+		font-size: $small-font-size;
+	}
 }
 
 a,
@@ -39,6 +43,10 @@ a:hover {
 .section-title {
 	font-family: HalveticaNow;
 	text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+
+	@include respond(lg) {
+		font-size: $small-font-size;
+	}
 }
 
 .section-title {
@@ -50,6 +58,10 @@ a:hover {
 
 	@include respond(phone) {
 		font-size: 2.8rem;
+	}
+
+	@include respond(lg) {
+		font-size: 5rem;
 	}
 }
 
@@ -87,6 +99,9 @@ a:hover {
 		}
 		@include respond(md) {
 			margin-left: 4rem;
+		}
+		@include respond(lg) {
+			font-size: $default-font-size;
 		}
 
 		&:hover {

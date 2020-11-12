@@ -3,7 +3,8 @@ section {
 	border: none;
 	padding: 3rem $small-font-size 4rem $small-font-size;
 
-	@include respond(sm) {
+	@include respond(lg) {
+		padding-top: 5rem;
 	}
 
 	background-color: #f0f0f0;
