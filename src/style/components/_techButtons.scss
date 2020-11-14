@@ -15,10 +15,10 @@
 		}
 
 		li {
-			padding: 7px 2px;
+			padding: 9px 2px;
 			border-radius: 5px;
 			color: white;
-			font-size: 1.2rem;
+			font-size: 1rem;
 		}
 
 		@include respond(tab-land) {
@@ -52,5 +52,8 @@
 
 	.olive-green li {
 		background-color: #2a3f08;
+	}
+	.orange li {
+		background-color: #f74e21;
 	}
 }
