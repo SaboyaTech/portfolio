@@ -9,12 +9,12 @@
 	src: url(../assets/fonts/Fontania.otf);
 }
 
-h1 {
-	font-weight: 700;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
 
-#typewriter-section {
-	margin-bottom: 2rem;
+body {
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	box-sizing: border-box;
 }
 
 p,
@@ -41,8 +41,9 @@ a:hover {
 
 .hero-title,
 .section-title {
-	font-family: HalveticaNow;
-	text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+	// font-family: HalveticaNow;
+	font-family: 'Inter', sans-serif;
+	font-weight: 700;
 
 	@include respond(lg) {
 		font-size: $small-font-size;
@@ -52,7 +53,6 @@ a:hover {
 .section-title {
 	margin: 0px;
 	font-size: $big-font-size;
-	font-weight: 100;
 	text-transform: uppercase;
 	padding-bottom: 4rem;
 
