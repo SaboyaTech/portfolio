@@ -1,24 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="shortcut icon" type="image/png" href="assets/default.png" />
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="assets/default.png" />
 
-		<title>Saboya_Dev | Full-Stack Developer</title>
-		<!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
-		<meta
-			name="keywords"
-			content="saboya_dev, Jose Saboya, developer, digital marketing, javascript, react, new jersey"
-		/>
+    <title>Saboya_Dev | Full-Stack Developer</title>
+    <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
+    <meta
+      name="keywords"
+      content="saboya_dev, Jose Saboya, developer, digital marketing, javascript, react, new jersey"
+    />
 
-		<!-- Improve SEO by adding a small descrption of you -->
-		<meta property="og:type" content="website" />
+    <!-- Improve SEO by adding a small descrption of you -->
+    <meta property="og:type" content="website" />
+    <meta
+      name="title"
+      property="og:title"
+      content="Saboya_Dev | Full-Stack Web-Developer | Shopify Expert"
+    />
+    <meta
+      name="image"
+      property="og:image"
+      content="https://personal-portfolio-2020.s3.amazonaws.com/default.png"
+    />
+    <meta
+      name="description"
+      property="og:description"
+      content="Full-Stack developer who produces meaningful user experiences on the web by combining innovative and strong design skills with modern technologies"
+    />
+    <meta property="fb:app_id" content="831168951027977" />
+    <meta name="author" content="Jose L Saboya" />
+
+    <!-- <meta property="og:url" content="https://www.saboyadev.com"> -->
+    <!-- <meta property="og:type" content="website" />
 		<meta
 			name="title"
 			property="og:title"
-			content="Saboya_Dev | Full-Stack Web-Developer | Comp. Sci. Student"
+			content="Saboya_Dev | Full-Stack Web-Developer | Shopify Expert"
 		/>
 		<meta
 			name="image"
@@ -28,663 +48,640 @@
 		<meta
 			name="description"
 			property="og:description"
-			content="Solving all your web needs, currently
-			seeking to obtain a challenging opportunity where my web development skills,
-			adaptability, and background can be applied to add value to a business."
-		/>
-		<meta property="fb:app_id" content="831168951027977" />
-		<meta name="author" content="Jose L Saboya" />
+			content="Full-Stack developer who produces meaningful user experiences on the web by combining innovative and strong design skills with modern technologies"
+		/> -->
+    <meta property="fb:app_id" content="831168951027977" />
+    <meta name="author" content="Jose L Saboya" />
 
-		<!-- <meta property="og:url" content="https://www.saboyadev.com"> -->
-		<meta property="og:type" content="website" />
-		<meta
-			name="title"
-			property="og:title"
-			content="Saboya_Dev | Full-Stack Web-Developer"
-		/>
-		<meta
-			name="image"
-			property="og:image"
-			content="https://personal-portfolio-2020.s3.amazonaws.com/default.png"
-		/>
-		<meta
-			name="description"
-			property="og:description"
-			content="Solving all your web needs,  I'm an experienced full stack developer who combines innovative and strong design skills with modern technologies to produce meaningful user experiences on the web."
-		/>
-		<meta property="fb:app_id" content="831168951027977" />
-		<meta name="author" content="Jose L Saboya" />
+    <!-- Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.0/normalize.css"
+    />
 
-		<!-- Normalize -->
-		<link
-			rel="stylesheet"
-			href="https://necolas.github.io/normalize.css/8.0.0/normalize.css"
-		/>
+    <!-- Required librarys -->
+    <script
+      src="https://kit.fontawesome.com/8443c557df.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      ScrollReveal({ reset: false });
+    </script>
+  </head>
 
-		<!-- Required librarys -->
-		<script
-			src="https://kit.fontawesome.com/8443c557df.js"
-			crossorigin="anonymous"
-		></script>
-		<script src="https://unpkg.com/scrollreveal"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script>
-			ScrollReveal({ reset: false });
-		</script>
-	</head>
+  <body>
+    <header>
+      <div id="video-wrapper">
+        <video preload="auto" playsinline muted autoplay loop>
+          <source
+            src="https://portfolio-background-video.s3.amazonaws.com/shortTypingVideoBg720.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
 
-	<body>
-		<header>
-			<div id="video-wrapper">
-				<video preload="auto" playsinline muted autoplay loop>
-					<source
-						src="https://portfolio-background-video.s3.amazonaws.com/shortTypingVideoBg720.mp4"
-						type="video/mp4"
-					/>
-				</video>
-			</div>
+      <!-- **** Hero Section **** -->
+      <div id="filter">
+        <div class="nav-section">
+          <div class="container header-container">
+            <!-- Logo -->
+            <div class="logo">
+              <img src="./assets/goldLogo.svg" alt="" class="logo-img" />
+            </div>
 
-			<!-- **** Hero Section **** -->
-			<div id="filter">
-				<div class="nav-section">
-					<div class="container header-container">
-						<!-- Logo -->
-						<div class="logo">
-							<img src="./assets/goldLogo.svg" alt="" class="logo-img" />
-						</div>
+            <!-- Button -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" />
 
-						<!-- Button -->
-						<input type="checkbox" id="nav-toggle" class="nav-toggle" />
+            <!-- Menu -->
+            <div class="menu">
+              <nav>
+                <a href="#">Home</a>
+                <a href="#about">About Me</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact Me</a>
+              </nav>
+            </div>
+            <!-- Hamburger Menu -->
+            <label for="nav-toggle" class="nav-toggle-label">
+              <span><i class="fas fa-bars"></i></span>
+            </label>
+          </div>
+          <!-- END container header-container -->
+        </div>
 
-						<!-- Menu -->
-						<div class="menu">
-							<nav>
-								<a href="#">Home</a>
-								<a href="#about">About Me</a>
-								<a href="#projects">Projects</a>
-								<a href="#contact">Contact Me</a>
-							</nav>
-						</div>
-						<!-- Hamburger Menu -->
-						<label for="nav-toggle" class="nav-toggle-label">
-							<span><i class="fas fa-bars"></i></span>
-						</label>
-					</div>
-					<!-- END container header-container -->
-				</div>
+        <div id="hero">
+          <div class="container">
+            <h1 class="hero-title">Hi, I'm <span>Jose L Saboya</span></h1>
+            <p id="sub-hero-title">Your Favorite Developer...</p>
+            <p class="hero-cta" class="load-hidden">
+              <a class="btn btn--peach btn--animated" href="#about"
+                >Know more</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- /END Hero Section -->
+    </header>
 
-				<div id="hero">
-					<div class="container">
-						<h1 class="hero-title">Hi, I'm <span>Jose L Saboya</span></h1>
-						<p id="sub-hero-title">Your Next Developer...</p>
-						<p class="hero-cta" class="load-hidden">
-							<a class="btn btn--peach btn--animated" href="#about"
-								>Know more</a
-							>
-						</p>
-					</div>
-				</div>
-			</div>
-			<!-- /END Hero Section -->
-		</header>
+    <!-- **** About Section **** -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">Who am I?</h2>
+        <div class="row about-wrapper">
+          <div class="col-md-6 col-sm-12 about-left">
+            <div class="about-wrapper__image">
+              <img
+                class="img-fluid"
+                height="auto"
+                width="300px"
+                src="https://personal-portfolio-2020.s3.amazonaws.com/profile.jpg"
+                alt="Profile Image"
+              />
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 about-right">
+            <div class="about-wrapper__info">
+              <p class="about-wrapper__info-text">
+                Full-Stack developer who produces meaningful user experiences on
+                the web by combining innovative and strong design skills with
+                modern technologies
+              </p>
 
-		<!-- **** About Section **** -->
-		<section id="about">
-			<div class="container">
-				<h2 class="section-title">Who am I?</h2>
-				<div class="row about-wrapper">
-					<div class="col-md-6 col-sm-12 about-left">
-						<div class="about-wrapper__image">
-							<img
-								class="img-fluid"
-								height="auto"
-								width="300px"
-								src="https://personal-portfolio-2020.s3.amazonaws.com/profile.jpg"
-								alt="Profile Image"
-							/>
-						</div>
-					</div>
-					<div class="col-md-6 col-sm-12 about-right">
-						<div class="about-wrapper__info">
-							<p class="about-wrapper__info-text">
-								I'm currently a Computer Science student seeking to obtain a
-								challenging opportunity where my web development skills,
-								adaptability, and academic background can be applied to add
-								value to an organization.
-							</p>
+              <span class="mt-3">
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn--peach btn--animated"
+                  href="https://personal-portfolio-2020.s3.amazonaws.com/MyResume.pdf"
+                >
+                  View Resume
+                </a>
+              </span>
 
-							<span class="mt-3">
-								<a
-									target="_blank"
-									rel="noopener"
-									class="btn btn--peach btn--animated"
-									href="https://personal-portfolio-2020.s3.amazonaws.com/MyResume.pdf"
-								>
-									View Resume
-								</a>
-							</span>
+              <div id="about-me" class="social-links">
+                <a
+                  href="https://twitter.com/saboya_dev"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fa fa-twitter fa-inverse"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/saboya_dev/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fa fa-instagram fa-inverse"></i>
+                </a>
+                <a
+                  href="https://linkedin.com/in/joseluissaboya"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fa fa-linkedin fa-inverse"></i>
+                </a>
+                <a
+                  href="https://github.com/SaboyaDev"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fa fa-github fa-inverse"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END About Section -->
 
-							<div id="about-me" class="social-links">
-								<a
-									href="https://twitter.com/saboya_dev"
-									target="_blank"
-									rel="noopener"
-								>
-									<i class="fa fa-twitter fa-inverse"></i>
-								</a>
-								<a
-									href="https://www.instagram.com/saboya_dev/"
-									target="_blank"
-									rel="noopener"
-								>
-									<i class="fa fa-instagram fa-inverse"></i>
-								</a>
-								<a
-									href="https://linkedin.com/in/joseluissaboya"
-									target="_blank"
-									rel="noopener"
-								>
-									<i class="fa fa-linkedin fa-inverse"></i>
-								</a>
-								<a
-									href="https://github.com/SaboyaDev"
-									target="_blank"
-									rel="noopener"
-								>
-									<i class="fa fa-github fa-inverse"></i>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- /END About Section -->
+    <!-- **** Projects Section **** -->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title project-text">Projects</h2>
 
-		<!-- **** Projects Section **** -->
-		<section id="projects">
-			<div class="container">
-				<div class="project-wrapper">
-					<h2 class="section-title project-text">Projects</h2>
-
-					<!-- React E-Commerce Store Each .row is a project -->
-					<div class="row">
-						<div class="col-lg-5 col-sm-12">
-							<div class="project-wrapper__text">
-								<h3 class="project-wrapper__text-title">
-									X-Vision -
-									<span class="sub-title"
-										>React E-Commerce App, w/ Redux, Hooks, GraphQL, Stripe API
-										Payment, Style Components.</span
-									>
-								</h3>
-								<div class="project-description">
-									<p class="mb-4">
-										A modern fully fledge E-Commerce React Store that uses React
-										Hooks /that is scalable with Redux. X-Vision is able to
-										store user information and securely process payments using
-										the Stripe API. The app uses Style Components for a modern
-										styling on React Components.
-									</p>
-									<ul class="grid-container orange">
-										<li>React</li>
-										<li>React Hooks</li>
-										<li>React Router</li>
-										<li>Redux</li>
-										<li>Redux Saga</li>
-										<li>Context API</li>
-										<li>GraphQL</li>
-										<li>Style Components</li>
-										<li>Node</li>
-										<li>Firebase</li>
-									</ul>
-								</div>
-								<a
-									target="_blank"
-									rel="noopener"
-									class="cta-btn cta-btn--hero"
-									href="#!"
-								>
-									Coming Soon
-								</a>
-								<!-- <a target="_blank" rel="noopener" class="cta-btn text-color-main" href="#!">
+          <!-- React E-Commerce Store Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-5 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">
+                  X-Vision -
+                  <span class="sub-title"
+                    >React E-Commerce App, w/ Redux, Hooks, GraphQL, Stripe API
+                    Payment, Style Components.</span
+                  >
+                </h3>
+                <div class="project-description">
+                  <p class="mb-4">
+                    A modern fully fledge E-Commerce React Store that uses React
+                    Hooks /that is scalable with Redux. X-Vision is able to
+                    store user information and securely process payments using
+                    the Stripe API. The app uses Style Components for a modern
+                    styling on React Components.
+                  </p>
+                  <ul class="grid-container orange">
+                    <li>React</li>
+                    <li>React Hooks</li>
+                    <li>React Router</li>
+                    <li>Redux</li>
+                    <li>Redux Saga</li>
+                    <li>Context API</li>
+                    <li>GraphQL</li>
+                    <li>Style Components</li>
+                    <li>Node</li>
+                    <li>Firebase</li>
+                  </ul>
+                </div>
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  class="cta-btn cta-btn--hero"
+                  href="#!"
+                >
+                  Coming Soon
+                </a>
+                <!-- <a target="_blank" rel="noopener" class="cta-btn text-color-main" href="#!">
 									Github
 								</a> -->
-							</div>
-						</div>
-						<div class="col-lg-7 col-sm-12">
-							<div class="project-wrapper__image">
-								<a href="#!" target="_blank" rel="noopener">
-									<div data-tilt class="thumbnail rounded">
-										<img
-											class="img-fluid"
-											src="https://personal-portfolio-2020.s3.amazonaws.com/crwnStore.gif"
-										/>
-									</div>
-								</a>
-							</div>
-						</div>
-					</div>
-					<!-- /END Project -->
+              </div>
+            </div>
+            <div class="col-lg-7 col-sm-12">
+              <div class="project-wrapper__image">
+                <a href="#!" target="_blank" rel="noopener">
+                  <div data-tilt class="thumbnail rounded">
+                    <img
+                      class="img-fluid"
+                      src="https://personal-portfolio-2020.s3.amazonaws.com/crwnStore.gif"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
 
-					<!-- Face Recognition App Each .row is a project -->
-					<div class="row">
-						<div class="col-lg-5 col-sm-12">
-							<div class="project-wrapper__text">
-								<h3 class="project-wrapper__text-title">
-									Smart Brain -
-									<span class="sub-title"
-										>Facial Recognition React App w/ Authentication and
-										Hashing</span
-									>
-								</h3>
-								<div class="project-description">
-									<p class="mb-4">
-										A Facial Recognition app built on React.js that uses
-										Clarifai API to detect a face on a photo. A user can sign-up
-										or login securely, and the system will keep track of how
-										many scans the user has.
-									</p>
-									<p class="mb-4">
-										The backend was built on Node.js with an Express server that
-										connects to a MySQL database. For security BCrypt was
-										implemented, this took care of the password-hashing.
-									</p>
-									<ul class="grid-container pink">
-										<li>Reat</li>
-										<li>SCSS</li>
-										<li>RestAPI</li>
-										<li>Node</li>
-										<li>Express</li>
-										<li>BCrypt</li>
-										<li>Mysql</li>
-									</ul>
-								</div>
-								<a
-									target="_blank"
-									rel="noopener"
-									class="cta-btn cta-btn--hero"
-									href="https://5f50823e1b7c838b61b74d83--face-recognition-react-app.netlify.app/"
-								>
-									See Live
-								</a>
-								<a
-									target="_blank"
-									rel="noopener"
-									class="cta-btn text-color-main"
-									href="https://github.com/SaboyaDev/Zero-Ro-Mastery-Face-Recognition-Brain"
-								>
-									Github
-								</a>
-							</div>
-						</div>
-						<div class="col-lg-7 col-sm-12">
-							<div class="project-wrapper__image">
-								<a
-									href="https://5f50823e1b7c838b61b74d83--face-recognition-react-app.netlify.app/"
-									target="_blank"
-									rel="noopener"
-								>
-									<div data-tilt class="thumbnail rounded">
-										<img
-											class="img-fluid"
-											src="https://personal-portfolio-2020.s3.amazonaws.com/face-rec.gif"
-										/>
-									</div>
-								</a>
-							</div>
-						</div>
-					</div>
-					<!-- /END Project -->
+          <!-- Face Recognition App Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-5 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">
+                  Smart Brain -
+                  <span class="sub-title"
+                    >Facial Recognition React App w/ Authentication and
+                    Hashing</span
+                  >
+                </h3>
+                <div class="project-description">
+                  <p class="mb-4">
+                    A Facial Recognition app built on React.js that uses
+                    Clarifai API to detect a face on a photo. A user can sign-up
+                    or login securely, and the system will keep track of how
+                    many scans the user has.
+                  </p>
+                  <p class="mb-4">
+                    The backend was built on Node.js with an Express server that
+                    connects to a MySQL database. For security BCrypt was
+                    implemented, this took care of the password-hashing.
+                  </p>
+                  <ul class="grid-container pink">
+                    <li>Reat</li>
+                    <li>SCSS</li>
+                    <li>RestAPI</li>
+                    <li>Node</li>
+                    <li>Express</li>
+                    <li>BCrypt</li>
+                    <li>Mysql</li>
+                  </ul>
+                </div>
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  class="cta-btn cta-btn--hero"
+                  href="https://5f50823e1b7c838b61b74d83--face-recognition-react-app.netlify.app/"
+                >
+                  See Live
+                </a>
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/SaboyaDev/Zero-Ro-Mastery-Face-Recognition-Brain"
+                >
+                  Github
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-7 col-sm-12">
+              <div class="project-wrapper__image">
+                <a
+                  href="https://5f50823e1b7c838b61b74d83--face-recognition-react-app.netlify.app/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <div data-tilt class="thumbnail rounded">
+                    <img
+                      class="img-fluid"
+                      src="https://personal-portfolio-2020.s3.amazonaws.com/face-rec.gif"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
 
-					<!-- Secure Fox Each .row is a project -->
-					<div class="row">
-						<div class="col-lg-5 col-sm-12">
-							<div class="project-wrapper__text">
-								<h3 class="project-wrapper__text-title">
-									Secure Fox -
-									<span class="sub-title"
-										>The Most Secured Digital Journal With AES 256 BIT
-										Encryption (w/ Travis CI)</span
-									>
-								</h3>
-								<div class="project-description">
-									<p class="mb-4">
-										Our team took on this challenge with the idea in mind that
-										there was a lack of online journal application services.
-										Secure Fox is a journal web-application project where users
-										can create an account, write a secure journal entry and save
-										it so that they access it whenever they want. We also
-										incorporated testing with Chai and Mocha, also Contious
-										Integration was use with Travis CI.
-									</p>
-									<ul class="grid-container gold">
-										<li>HTML5</li>
-										<li>CSS3</li>
-										<li>Travis CI</li>
-										<li>Javascript</li>
-										<li>Flexbox</li>
-										<li>Node</li>
-										<li>Express</li>
-										<li>Sequalize</li>
-										<li>MySQL</li>
-										<li>Passport.js</li>
-										<li>Chai</li>
-										<li>Mocha</li>
-									</ul>
-								</div>
-								<a
-									target="_blank"
-									rel="noopener"
-									class="cta-btn cta-btn--hero"
-									href="https://secure-fox.herokuapp.com/"
-								>
-									See Live
-								</a>
-								<a
-									target="_blank"
-									rel="noopener"
-									class="cta-btn text-color-main"
-									href="https://github.com/ma662/Secure-Fox"
-								>
-									Github
-								</a>
-							</div>
-						</div>
-						<div class="col-lg-7 col-sm-12">
-							<div class="project-wrapper__image">
-								<a
-									href="https://secure-fox.herokuapp.com/"
-									target="_blank"
-									rel="noopener"
-								>
-									<div data-tilt class="thumbnail rounded">
-										<img
-											class="img-fluid"
-											src="https://personal-portfolio-2020.s3.amazonaws.com/securefox.gif"
-										/>
-									</div>
-								</a>
-							</div>
-						</div>
-					</div>
-					<!-- /END Project -->
+          <!-- Secure Fox Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-5 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">
+                  Secure Fox -
+                  <span class="sub-title"
+                    >The Most Secured Digital Journal With AES 256 BIT
+                    Encryption (w/ Travis CI)</span
+                  >
+                </h3>
+                <div class="project-description">
+                  <p class="mb-4">
+                    Our team took on this challenge with the idea in mind that
+                    there was a lack of online journal application services.
+                    Secure Fox is a journal web-application project where users
+                    can create an account, write a secure journal entry and save
+                    it so that they access it whenever they want. We also
+                    incorporated testing with Chai and Mocha, also Contious
+                    Integration was use with Travis CI.
+                  </p>
+                  <ul class="grid-container gold">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Travis CI</li>
+                    <li>Javascript</li>
+                    <li>Flexbox</li>
+                    <li>Node</li>
+                    <li>Express</li>
+                    <li>Sequalize</li>
+                    <li>MySQL</li>
+                    <li>Passport.js</li>
+                    <li>Chai</li>
+                    <li>Mocha</li>
+                  </ul>
+                </div>
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  class="cta-btn cta-btn--hero"
+                  href="https://secure-fox.herokuapp.com/"
+                >
+                  See Live
+                </a>
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/ma662/Secure-Fox"
+                >
+                  Github
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-7 col-sm-12">
+              <div class="project-wrapper__image">
+                <a
+                  href="https://secure-fox.herokuapp.com/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <div data-tilt class="thumbnail rounded">
+                    <img
+                      class="img-fluid"
+                      src="https://personal-portfolio-2020.s3.amazonaws.com/securefox.gif"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
 
-					<!-- Drone JS Each .row is a project -->
-					<div class="row">
-						<div class="col-lg-5 col-sm-12 left-side">
-							<div class="project-wrapper__text">
-								<h3 class="project-wrapper__text-title">
-									Take Flight -
-									<span class="sub-title"
-										>Node.js Drone Project w/ Socket.io</span
-									>
-								</h3>
-								<div class="project-description">
-									<p class="mb-4">
-										A React.js Drone application that uses a Node.js backend to
-										communicate with the DJI Tello Drone via UDP4 sockets, and
-										to communicate to and from the browser Socket.io was
-										implemented. Data sent back from the drone was used to
-										display it's current position in a gyroscope ui, the drone's
-										battery level. Flight data was recorded into a MySql
-										database.
-									</p>
-									<ul class="grid-container olive-green">
-										<li>React</li>
-										<li>CSS3</li>
-										<li>Node</li>
-										<li>Express</li>
-										<li>UDP4</li>
-										<li>Socket.io</li>
-										<li>MySQL</li>
-										<li>Sequelize</li>
-									</ul>
-								</div>
-								<div class="view-options">
-									<a
-										target="_blank"
-										rel="noopener"
-										class="cta-btn cta-btn--hero"
-										href="https://ancient-eyrie-50147.herokuapp.com/"
-									>
-										See Live
-									</a>
-									<a
-										id="watchDemo"
-										target="_blank"
-										rel="noopener"
-										class="cta-btn cta-btn--hero"
-										href="https://www.youtube.com/watch?v=izNCqQCPWCQ&t=3s"
-									>
-										Video
-									</a>
-									<a
-										target="_blank"
-										rel="noopener"
-										class="cta-btn text-color-main"
-										href="https://github.com/SaboyaDev/Take-Flight"
-									>
-										Github
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-7 col-sm-12 right-side">
-							<div class="project-wrapper__image">
-								<a
-									href="https://ancient-eyrie-50147.herokuapp.com"
-									target="_blank"
-									rel="noopener"
-								>
-									<div data-tilt class="thumbnail rounded">
-										<img
-											class="img-fluid"
-											src="https://personal-portfolio-2020.s3.amazonaws.com/takeflight.gif"
-										/>
-									</div>
-								</a>
-							</div>
-						</div>
-					</div>
-					<!-- /END Project -->
+          <!-- Drone JS Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-5 col-sm-12 left-side">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">
+                  Take Flight -
+                  <span class="sub-title"
+                    >Node.js Drone Project w/ Socket.io</span
+                  >
+                </h3>
+                <div class="project-description">
+                  <p class="mb-4">
+                    A React.js Drone application that uses a Node.js backend to
+                    communicate with the DJI Tello Drone via UDP4 sockets, and
+                    to communicate to and from the browser Socket.io was
+                    implemented. Data sent back from the drone was used to
+                    display it's current position in a gyroscope ui, the drone's
+                    battery level. Flight data was recorded into a MySql
+                    database.
+                  </p>
+                  <ul class="grid-container olive-green">
+                    <li>React</li>
+                    <li>CSS3</li>
+                    <li>Node</li>
+                    <li>Express</li>
+                    <li>UDP4</li>
+                    <li>Socket.io</li>
+                    <li>MySQL</li>
+                    <li>Sequelize</li>
+                  </ul>
+                </div>
+                <div class="view-options">
+                  <a
+                    target="_blank"
+                    rel="noopener"
+                    class="cta-btn cta-btn--hero"
+                    href="https://ancient-eyrie-50147.herokuapp.com/"
+                  >
+                    See Live
+                  </a>
+                  <a
+                    id="watchDemo"
+                    target="_blank"
+                    rel="noopener"
+                    class="cta-btn cta-btn--hero"
+                    href="https://www.youtube.com/watch?v=izNCqQCPWCQ&t=3s"
+                  >
+                    Video
+                  </a>
+                  <a
+                    target="_blank"
+                    rel="noopener"
+                    class="cta-btn text-color-main"
+                    href="https://github.com/SaboyaDev/Take-Flight"
+                  >
+                    Github
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7 col-sm-12 right-side">
+              <div class="project-wrapper__image">
+                <a
+                  href="https://ancient-eyrie-50147.herokuapp.com"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <div data-tilt class="thumbnail rounded">
+                    <img
+                      class="img-fluid"
+                      src="https://personal-portfolio-2020.s3.amazonaws.com/takeflight.gif"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
 
-					<!-- Burger Creation Each .row is a project -->
-					<div class="row">
-						<div class="col-lg-5 col-sm-12 main-wrapper">
-							<div class="project-wrapper__text">
-								<h3 class="project-wrapper__text-title">
-									Burger Creation -
-									<span class="sub-title"
-										>Full Stack Node Using MVC and Handlebars</span
-									>
-								</h3>
-								<div class="project-description">
-									<p class="mb-4">
-										A responsive Full Stack fast food restaurant app that let's
-										you create your own kind of burger that you would like to
-										eat, plus you get to name your creation creation. This site
-										was built utilizing:
-									</p>
-									<ul class="grid-container red">
-										<li>Handlebars</li>
-										<li>SCSS</li>
-										<li>MySql</li>
-										<li>Sequelize</li>
-										<li>Node</li>
-										<li>Express</li>
-									</ul>
-								</div>
-								<a
-									target="_blank"
-									rel="noopener"
-									class="cta-btn cta-btn--hero"
-									href="https://burger-creation.herokuapp.com/burgers"
-								>
-									See Live
-								</a>
-								<a
-									target="_blank"
-									rel="noopener"
-									class="cta-btn text-color-main"
-									href="https://github.com/SaboyaDev/Burger-Creation-App"
-								>
-									Github
-								</a>
-							</div>
-						</div>
+          <!-- Burger Creation Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-5 col-sm-12 main-wrapper">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">
+                  Burger Creation -
+                  <span class="sub-title"
+                    >Full Stack Node Using MVC and Handlebars</span
+                  >
+                </h3>
+                <div class="project-description">
+                  <p class="mb-4">
+                    A responsive Full Stack fast food restaurant app that let's
+                    you create your own kind of burger that you would like to
+                    eat, plus you get to name your creation creation. This site
+                    was built utilizing:
+                  </p>
+                  <ul class="grid-container red">
+                    <li>Handlebars</li>
+                    <li>SCSS</li>
+                    <li>MySql</li>
+                    <li>Sequelize</li>
+                    <li>Node</li>
+                    <li>Express</li>
+                  </ul>
+                </div>
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  class="cta-btn cta-btn--hero"
+                  href="https://burger-creation.herokuapp.com/burgers"
+                >
+                  See Live
+                </a>
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/SaboyaDev/Burger-Creation-App"
+                >
+                  Github
+                </a>
+              </div>
+            </div>
 
-						<div class="col-lg-7 col-sm-12">
-							<div class="project-wrapper__image">
-								<a
-									href="https://burger-creation.herokuapp.com/burgers"
-									target="_blank"
-									rel="noopener"
-								>
-									<div data-tilt class="thumbnail rounded">
-										<img
-											class="img-fluid"
-											src="https://personal-portfolio-2020.s3.amazonaws.com/Screen+Shot+2020-11-10+at+6.43.10+PM.png"
-										/>
-									</div>
-								</a>
-							</div>
-						</div>
-					</div>
-					<!-- /END Project -->
+            <div class="col-lg-7 col-sm-12">
+              <div class="project-wrapper__image">
+                <a
+                  href="https://burger-creation.herokuapp.com/burgers"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <div data-tilt class="thumbnail rounded">
+                    <img
+                      class="img-fluid"
+                      src="https://personal-portfolio-2020.s3.amazonaws.com/Screen+Shot+2020-11-10+at+6.43.10+PM.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
 
-					<!-- Cosmo Junkie Each .row is a project -->
-					<div class="row">
-						<div class="col-lg-4 col-sm-12 main-wrapper">
-							<div class="project-wrapper__text">
-								<h3 class="project-wrapper__text-title">
-									Cosmo Junkie -
-									<span class="sub-title">CSS Grid</span>
-								</h3>
-								<div class="project-description">
-									<p class="mb-4">
-										A mobile-first responsive build with a space theme. This
-										site was built utilizing:
-									</p>
-									<ul class="grid-container dark-purple">
-										<li>HTML5</li>
-										<li>SCSS</li>
-										<li>CSS Grid</li>
-										<li>CSS Flexbox</li>
-									</ul>
-								</div>
-								<a
-									target="_blank"
-									rel="noopener"
-									class="cta-btn cta-btn--hero"
-									href="https://saboyadev.github.io/Mobile-First-Responsive-Cosmo-Junkie/"
-								>
-									See Live
-								</a>
-								<a
-									target="_blank"
-									rel="noopener"
-									class="cta-btn text-color-main"
-									href="https://github.com/SaboyaDev/Mobile-First-Responsive-Cosmo-Junkie"
-								>
-									Github
-								</a>
-							</div>
-						</div>
+          <!-- Cosmo Junkie Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12 main-wrapper">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">
+                  Cosmo Junkie -
+                  <span class="sub-title">CSS Grid</span>
+                </h3>
+                <div class="project-description">
+                  <p class="mb-4">
+                    A mobile-first responsive build with a space theme. This
+                    site was built utilizing:
+                  </p>
+                  <ul class="grid-container dark-purple">
+                    <li>HTML5</li>
+                    <li>SCSS</li>
+                    <li>CSS Grid</li>
+                    <li>CSS Flexbox</li>
+                  </ul>
+                </div>
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  class="cta-btn cta-btn--hero"
+                  href="https://saboyadev.github.io/Mobile-First-Responsive-Cosmo-Junkie/"
+                >
+                  See Live
+                </a>
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/SaboyaDev/Mobile-First-Responsive-Cosmo-Junkie"
+                >
+                  Github
+                </a>
+              </div>
+            </div>
 
-						<div class="col-lg-8 col-sm-12">
-							<div class="project-wrapper__image">
-								<a
-									href="https://saboyadev.github.io/Mobile-First-Responsive-Cosmo-Junkie/"
-									target="_blank"
-									rel="noopener"
-								>
-									<div data-tilt class="thumbnail rounded">
-										<img
-											class="img-fluid"
-											src="https://personal-portfolio-2020.s3.amazonaws.com/cosmo-junkie.gif"
-										/>
-									</div>
-								</a>
-							</div>
-						</div>
-					</div>
-					<!-- /END Project -->
-				</div>
-			</div>
-		</section>
-		<!-- /END Projects Section -->
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a
+                  href="https://saboyadev.github.io/Mobile-First-Responsive-Cosmo-Junkie/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <div data-tilt class="thumbnail rounded">
+                    <img
+                      class="img-fluid"
+                      src="https://personal-portfolio-2020.s3.amazonaws.com/cosmo-junkie.gif"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+        </div>
+      </div>
+    </section>
+    <!-- /END Projects Section -->
 
-		<!-- **** Contact Section **** -->
-		<section id="contact">
-			<div class="filter-contact"></div>
-			<div class="container contact-flex-cont">
-				<!-- <h2 class="section-title">
+    <!-- **** Contact Section **** -->
+    <section id="contact">
+      <div class="filter-contact"></div>
+      <div class="container contact-flex-cont">
+        <!-- <h2 class="section-title">
 					Contact
 				</h2> -->
-				<div class="contact-wrapper">
-					<h2>Available for freelance projects</h2>
-					<p class="contact-wrapper__text">
-						Do you have a web project? lets talk.
-					</p>
-					<a
-						target="_blank"
-						rel="noopener"
-						class="btn btn--peach btn--animated"
-						href="mailto:example@email.com"
-						>LET'S TALK NOW</a
-					>
-				</div>
-			</div>
-		</section>
-		<!-- /END Contact Section -->
+        <div class="contact-wrapper">
+          <h2>Available for freelance projects</h2>
+          <p class="contact-wrapper__text">
+            Do you have a web project? lets talk.
+          </p>
+          <a
+            target="_blank"
+            rel="noopener"
+            class="btn btn--peach btn--animated"
+            href="mailto:example@email.com"
+            >LET'S TALK NOW</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- /END Contact Section -->
 
-		<!-- **** Footer Section **** -->
-		<footer class="footer navbar-static-bottom">
-			<div class="container">
-				<a href="#top" class="back-to-top">
-					<i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
-				</a>
-				<div class="social-links">
-					<a
-						href="https://twitter.com/saboya_dev"
-						target="_blank"
-						rel="noopener"
-					>
-						<i class="fa fa-twitter fa-inverse"></i>
-					</a>
-					<a
-						href="https://www.instagram.com/saboya_dev/"
-						target="_blank"
-						rel="noopener"
-					>
-						<i class="fa fa-instagram fa-inverse"></i>
-					</a>
-					<a
-						href="https://linkedin.com/in/joseluissaboya"
-						target="_blank"
-						rel="noopener"
-					>
-						<i class="fa fa-linkedin fa-inverse"></i>
-					</a>
-					<a href="https://github.com/SaboyaDev" target="_blank" rel="noopener">
-						<i class="fa fa-github fa-inverse"></i>
-					</a>
-				</div>
+    <!-- **** Footer Section **** -->
+    <footer class="footer navbar-static-bottom">
+      <div class="container">
+        <a href="#top" class="back-to-top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+          <a
+            href="https://twitter.com/saboya_dev"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fa fa-twitter fa-inverse"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/saboya_dev/"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fa fa-instagram fa-inverse"></i>
+          </a>
+          <a
+            href="https://linkedin.com/in/joseluissaboya"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fa fa-linkedin fa-inverse"></i>
+          </a>
+          <a href="https://github.com/SaboyaDev" target="_blank" rel="noopener">
+            <i class="fa fa-github fa-inverse"></i>
+          </a>
+        </div>
 
-				<hr />
+        <hr />
 
-				<p id="footer" class="footer__text">
-					© 2021 - Developed by
-					<a
-						href="https://github.com/joseluissaboya"
-						target="_blank"
-						rel="noopener"
-						>Saboya Xpress LLC</a
-					>
-				</p>
-			</div>
-		</footer>
-		<!-- /END Footer Section -->
-	</body>
+        <p id="footer" class="footer__text">
+          © 2021 - Developed by
+          <a
+            href="https://github.com/joseluissaboya"
+            target="_blank"
+            rel="noopener"
+            >Saboya Xpress LLC</a
+          >
+        </p>
+      </div>
+    </footer>
+    <!-- /END Footer Section -->
+  </body>
 </html>
