@@ -1,6 +1,9 @@
 {
 	"name": "peronsalportfolio",
 	"version": "1.0.1",
+	"engines": {
+		"node": "12.18.0"
+	},
 	"description": "My personal web development portfolio",
 	"main": "index.js",
 	"scripts": {
