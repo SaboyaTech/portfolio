@@ -52,13 +52,37 @@ a:hover {
 	}
 }
 
+#hero {
+	.hero-title {
+		font-size: $big-font-size;
+		@include respond(xs) {
+			font-size: 7rem;
+		}
+	}
+	#sub-hero-title {
+		text-align: left;
+		font-size: 1.55rem;
+
+		@include respond(md) {
+			font-size: $mid-font-size;
+		}
+
+		@include respond(lg) {
+			font-size: 2.5rem;
+		}
+		@include respond(xl) {
+			font-size: 3.5rem;
+		}
+	}
+}
+
 .section-title {
 	margin: 0px;
 	font-size: $big-font-size;
 	text-transform: uppercase;
 	padding-bottom: 4rem;
 
-	@include respond(phone) {
+	@include respond(sm) {
 		font-size: 2.8rem;
 	}
 

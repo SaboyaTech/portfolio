@@ -1,7 +1,7 @@
 // Section
 section {
 	border: none;
-	padding: 3rem $small-font-size 4rem $small-font-size;
+	padding: 8rem $small-font-size 4rem $small-font-size;
 
 	@include respond(lg) {
 		padding-top: 10rem;

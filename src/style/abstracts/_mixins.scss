@@ -9,6 +9,11 @@
 // 1rem = 16
 
 @mixin respond($breakpoint) {
+	@if $breakpoint == xs {
+		@media (min-width: 300px) {
+			@content;
+		}
+	}
 	// Small devices (landscape phones, 576px and up)
 	@if $breakpoint == sm {
 		@media (min-width: 576px) {
