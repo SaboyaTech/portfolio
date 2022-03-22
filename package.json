@@ -2,7 +2,7 @@
 	"name": "peronsalportfolio",
 	"version": "1.0.1",
 	"engines": {
-		"node": "12.18.0"
+		"node": "12.22.11"
 	},
 	"description": "My personal web development portfolio",
 	"main": "index.js",
